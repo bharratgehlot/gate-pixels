@@ -35,7 +35,7 @@
   {
     "id": 4,
     "type": "MCQ",
-   "question": "Consider the relationships among P, Q, R, S, and T:\n\n- P is the brother of Q.\n- S is the daughter of Q.\n- T is the sister of S.\n- R is the mother of Q.\n\nThe following statements are made based on the relationships given above:\n1. R is the grandmother of S.\n2. P is the uncle of S and T.\n3. R has only one son.\n4. Q has only one daughter.",
+   "question": "Consider the relationships among P, Q, R, S, and T:\n- P is the brother of Q.\n- S is the daughter of Q.\n- T is the sister of S.\n- R is the mother of Q.\n\nThe following statements are made based on the relationships given above:\n1. R is the grandmother of S.\n2. P is the uncle of S and T.\n3. R has only one son.\n4. Q has only one daughter.",
     "note": "Which one of the following options is correct?",
     "options": ["Both (1) and (2) are true..", "Both (1) and (3) are true..", "Only (3) is true.", "Only (4) is true."],
     "correctAnswers": ["A"],
@@ -171,7 +171,7 @@
     {
     "id": 15,
     "type": "MCQ",
-    "question": "Which ONE of the following statements is FALSE regarding the symbol table?",
+    "question": "Placeholder",
     "note": null,
     "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
     "correctAnswers": ["C"],
@@ -183,22 +183,22 @@
    {
     "id": 16,
     "type": "MCQ",
-    "question": "Placeholder",
+    "question": "Identify the ONE CORRECT matching between the OSI layers and their corresponding functionalities as shown.",
     "note": null,
-    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
-    "correctAnswers": ["C"],
+    "options": ["(a)-(I), (b)-(II), (c)-(III)", "(a)-(I), (b)-(III), (c)-(II)", "(a)-(II), (b)-(I), (c)-(III)", "(a)-(III), (b)-(II), (c)-(I)"],
+    "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": "/paper_1/que_16.png"
   },
 
    {
     "id": 17,
     "type": "MCQ",
-    "question": "Which ONE of the following statements is FALSE regarding the symbol table?",
-    "note": null,
-    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
-    "correctAnswers": ["C"],
+    "question": "𝑔(.) is a function from 𝐴 to 𝐵, 𝑓(.) is a function from 𝐵 to 𝐶, and their composition defined as 𝑓(𝑔(.)) is a mapping from 𝐴 to 𝐶. If 𝑓(.) and 𝑓(𝑔(.)) are onto (surjective) functions, ",
+    "note": "which ONE of the following is TRUE about the function g(.)?",
+    "options": ["𝑔(.) must be an onto (surjective) function.", "𝑔(.) must be a one-to-one (injective) function.", "𝑔(.) must be a bijective function, that is, both one-to-one and onto.", "𝑔(.) is not required to be a one-to-one or onto function."],
+    "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
     "image": null
@@ -207,10 +207,10 @@
    {
     "id": 18,
     "type": "MCQ",
-    "question": "Which ONE of the following statements is FALSE regarding the symbol table?",
+    "question": "Let 𝐺 be any undirected graph with positive edge weights, and 𝑇 be a minimum spanning tree of 𝐺. For any two vertices, 𝑢 and 𝑣, let 𝑑1(𝑢,𝑣) and 𝑑2(𝑢,𝑣) be the shortest distances between 𝑢 and 𝑣 in 𝐺 and 𝑇, respectively. Which ONE of the options is CORRECT for all possible 𝐺, 𝑇, 𝑢 and 𝑣?",
     "note": null,
-    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
-    "correctAnswers": ["C"],
+    "options": ["𝑑1(𝑢,𝑣)=𝑑2(𝑢,𝑣)", "𝑑1(𝑢,𝑣)≤𝑑2(𝑢,𝑣)", "𝑑1(𝑢,𝑣)≥𝑑2(𝑢,𝑣)", "𝑑1(𝑢,𝑣)≠𝑑2(𝑢,𝑣)"],
+    "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
     "image": null
@@ -219,7 +219,7 @@
    {
     "id": 19,
     "type": "MCQ",
-    "question": "Which ONE of the following statements is FALSE regarding the symbol table?",
+    "question": "Placeholder",
     "note": null,
     "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
     "correctAnswers": ["C"],
@@ -231,7 +231,7 @@
    {
     "id": 20,
     "type": "MCQ",
-    "question": "Which ONE of the following statements is FALSE regarding the symbol table?",
+    "question": "Placeholder",
     "note": null,
     "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
     "correctAnswers": ["C"],
@@ -240,10 +240,194 @@
     "image": null
   },
 
+   {
+    "id": 21,
+    "type": "MSQ",
+    "question": "Consider the following 𝐵+ tree with 5 nodes, in which a node can store at most 3 key values. The value 23 is now inserted in the 𝐵+ tree. ",
+    "note": "Which of the following options(s) is/are CORRECT?",
+    "options": ["None of the nodes will split.", "At least one node will split and redistribute.", "The total number of nodes will remain same.", "The height of the tree will increase."],
+    "correctAnswers": ["B","D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_21.png"
+  },
+
+   {
+    "id": 22,
+    "type": "MSQ",
+    "question": "Consider the 3-way handshaking protocol for TCP connection establishment. Let the three packets exchanged during the connection establishment be denoted as P1, P2, and P3, in order. Which of the following option(s) is/are TRUE with respect to TCP header flags that are set in the packets?",
+    "note": null,
+    "options": ["P3: SYN = 1, ACK = 1", "P2: SYN = 1, ACK = 1", "P2: SYN = 0, ACK = 1", "P1: SYN = 1"],
+    "correctAnswers": ["B", "D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+   {
+    "id": 23,
+    "type": "MSQ",
+    "question": "Consider the given system of linear equations for variables 𝑥 and 𝑦, where 𝑘 is a real-valued constant. Which of the following option(s) is/are CORRECT?",
+    "note": null,
+    "options": ["There is exactly one value of 𝑘 for which the above system of equations has no solution.", "There exist an infinite number of values of 𝑘 for which the system of equations has no solution.", "There exists exactly one value of 𝑘 for which the system of equations has exactly one solution.", "There exists exactly one value of 𝑘 for which the system of equations has an infinite number of solutions."],
+    "correctAnswers": ["A","D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_23.png"
+  },
+
+   {
+    "id": 24,
+    "type": "MSQ",
+    "question": "Let 𝑋 be a 3-variable Boolean function that produces output as ‘1’ when at least two of the input variables are ‘1’. Which of the following statement(s) is/are CORRECT, where 𝑎,𝑏,𝑐,𝑑,𝑒 are Boolean variables?",
+    "note": null,
+    "options": ["𝑋(𝑎,𝑏,𝑋(𝑐,𝑑,𝑒))= 𝑋(𝑋(𝑎,𝑏,𝑐),𝑑,𝑒)", "𝑋(𝑎,𝑏,𝑋(𝑎,𝑏,𝑐)) = 𝑋(𝑎,𝑏,𝑐)", "𝑋(𝑎,𝑏,𝑋(𝑎,𝑐,𝑑)) = (𝑋(𝑎,𝑏,𝑎) AND 𝑋(𝑐,𝑑,𝑐))", "𝑋(𝑎,𝑏,𝑐)=𝑋(𝑎,𝑋(𝑎,𝑏,𝑐),𝑋(𝑎,𝑐,𝑐))"],
+    "correctAnswers": ["B","D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+   {
+    "id": 25,
+    "type": "MSQ",
+    "question": "The number −6 can be represented as 1010 in 4-bit 2’s complement representation. Which of the following is/are CORRECT 2’s complement representation(s) of −6?",
+    "note": null,
+    "options": ["1000 1010 in 8-bits", "1111 1010 in 8-bits", "1000 0000 0000 1010 in 16-bits", "1111 1111 1111 1010 in 16-bits"],
+    "correctAnswers": ["B","D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  {
+    "id": 26,
+    "type": "MSQ",
+    "question": "Which of the following statement(s) is/are TRUE for any binary search tree (BST) having 𝑛 distinct integers?",
+    "note": null,
+    "options": ["The maximum length of a path from the root node to any other node is (𝑛−1).", "An inorder traversal will always produce a sorted sequence of elements.", "Finding an element takes 𝑂(log2𝑛) time in the worst case.", "Every BST is also a Min-Heap."],
+    "correctAnswers": ["A","B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+{
+    "id": 27,
+    "type": "MCQ",
+    "question": "A partial data path of a processor is given in the figure, where RA, RB, and RZ are 32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown?",
+    "note": null,
+    "options": ["The data path can implement arithmetic operations involving two registers.", "The data path can implement arithmetic operations involving one register and one immediate value.", "The data path can implement arithmetic operations involving two immediate values.", "The data path can only implement arithmetic operations involving one register and one immediate value."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_27.png"
+  },
+
+  {
+    "id": 28,
+    "type": "MCQ",
+    "question": "A regular language 𝐿 is accepted by a non-deterministic finite automaton (NFA) with 𝑛 states. Which of the following statement(s) is/are FALSE?",
+    "note": null,
+    "options": ["𝐿 may have an accepting NFA with <𝑛 states.", "𝐿 may have an accepting DFA with <𝑛 states.", "There exists a DFA with ≤2𝑛 states that accepts 𝐿.", "Every DFA that accepts 𝐿 has >2𝑛 states."],
+    "correctAnswers": ["C","D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+{
+    "id": 29,
+    "type": "NAT",
+    "question": "Suppose in a multiprogramming environment, the following C program segment is executed. A process goes into I/O queue whenever an I/O related operation is performed. Assume that there will always be a context switch whenever a process requests for an I/O, and also whenever the process returns from an I/O. The number of times the process will enter the ready queue during its lifetime (not counting the time the process enters the ready queue when it is run initially) is _______.",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswers": ["21"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_29.png"
+  },
+
+
+  {
+    "id": 30,
+    "type": "NAT",
+    "question": "Let 𝑆 be the set of all ternary strings defined over the alphabet {𝑎,𝑏,𝑐}. Consider all strings in 𝑆 that contain at least one occurrence of two consecutive symbols, that is, “aa”, “bb” or “cc”. The number of such strings of length 5 that are possible is _______.",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswers": ["195"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+   {
+    "id": 31,
+    "type": "NAT",
+    "question": "Consider the given function 𝑓(𝑥). If the function is differentiable everywhere, the value of 𝑏 must be ________. (rounded off to one decimal place)",
+    "note": "",
+    "options": [],
+    "correctAnswers": ["-2.0"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_31.png"
+  },
+
+   {
+    "id": 32,
+    "type": "NAT",
+    "question": "A box contains 5 coins: 4 regular coins and 1 fake coin. When a regular coin is tossed, the probability 𝑃(ℎ𝑒𝑎𝑑)=0.5 and for a fake coin, 𝑃(ℎ𝑒𝑎𝑑)=1. You pick a coin at random and toss it twice, and get two heads. The probability that the coin you have chosen is the fake coin is _______. (rounded off to two decimal places)",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["0.50"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+
+   {
+    "id": 33,
+    "type": "NAT",
+    "question": "The pseudocode of a function fun() is given in image: \n\nLet 𝐴[0,…,29] be an array storing 30 distinct integers in descending order. The number of swap operations that will be performed, if the function fun() is called with 𝐴[0,…,29] as argument, is __________.",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswers": ["435"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_33.png"
+  },
+
+
+   {
+    "id": 34,
+    "type": "NAT",
+    "question": "The output of the given C program is __________.",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswers": ["25"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_34.png"
+  },
+
+
+  {
+    "id": 35,
+    "type": "NAT",
+    "question": "The height of any rooted tree is defined as the maximum number of edges in the path from the root node to any leaf node. Suppose a Min-Heap 𝑇 stores 32 keys. The height of 𝑇 is _____________.",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["5"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
   {
     "id": 50,
     "type": "NAT",
-    "question": "What is the time complexity of binary search (in Big-O notation)?",
+    "question": "Placeholder",
     "note": null,
     "options": [],
     "correctAnswers": ["O(log n)"],
