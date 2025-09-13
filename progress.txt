@@ -1,0 +1,5 @@
+USE firebase firestore for storing and showing all users data.
+Play Song in background
+Scroll to top
+
+DAY 1: Setup + Initial Working
