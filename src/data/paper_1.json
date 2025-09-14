@@ -424,15 +424,398 @@
     "image": null
   },
 
-  {
+  
+   {
+    "id": 36,
+    "type": "MCQ",
+    "question": "Consider a memory system with 1M bytes of main memory and 16K bytes of cache memory. Assume that the processor generates 20-bit memory address, and the cache block size is 16 bytes. If the cache uses direct mapping, how many bits will be required to store all the tag values? [Assume memory is byte addressable, 1K=2^10, 1M=2^20 .]",
+    "note": null,
+    "options": ["6×2^10", "8×2^10", "2^12", "2^14"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 37,
+    "type": "MCQ",
+    "question": "A processor has 64 general-purpose registers and 50 distinct instruction types. An instruction is encoded in 32-bits. What is the maximum number of bits that can be used to store the immediate operand for the given instruction? \nADD R1, #25 // R1 = R1 + 25",
+    "note": null,
+    "options": ["16", "20", "22", "24"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 38,
+    "type": "MCQ",
+    "question": "A computer has two processors, 𝑀1 and 𝑀2. Four processes 𝑃1,𝑃2,𝑃3,𝑃4 with CPU bursts of 20, 16, 25, and 10 milliseconds, respectively, arrive at the same time and these are the only processes in the system. The scheduler uses non-preemptive priority scheduling, with priorities decided as follows: \n\n1. 𝑀1 uses priority of execution for the processes as, 𝑃1>𝑃3>𝑃2>𝑃4, i.e., 𝑃1 and 𝑃4 have highest and lowest priorities, respectively. \n2. 𝑀2 uses priority of execution for the processes as, 𝑃2>𝑃3>𝑃4>𝑃1, i.e., 𝑃2 and 𝑃1 have highest and lowest priorities, respectively.",
+    "note": null,
+    "options": ["9.00", "8.75", "6.50", "7.50"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_38.png"
+  },
+
+  
+   {
+    "id": 39,
+    "type": "MCQ",
+    "question": "Consider two relations describing 𝑡𝑒𝑎𝑚𝑠 and 𝑝𝑙𝑎𝑦𝑒𝑟𝑠 in a sports league: \n\n1. 𝑡𝑒𝑎𝑚𝑠(𝑡𝑖𝑑,𝑡𝑛𝑎𝑚𝑒): 𝑡𝑖𝑑, 𝑡𝑛𝑎𝑚e are team-id and team-name, respectively \n2. 𝑝𝑙𝑎𝑦𝑒𝑟𝑠(𝑝𝑖𝑑,𝑝𝑛𝑎𝑚𝑒,𝑡𝑖𝑑): 𝑝𝑖𝑑, 𝑝𝑛𝑎𝑚𝑒, and 𝑡𝑖𝑑 denote player-id, player-name and the team-id of the player, respectively",
+    "note": null,
+    "options": ["{ 𝑝.𝑝𝑛𝑎𝑚𝑒 | 𝑝∈𝑝𝑙𝑎𝑦𝑒𝑟𝑠∧∃𝑡 (𝑡∈𝑡𝑒𝑎𝑚𝑠∧𝑝.𝑡𝑖𝑑=𝑡.𝑡𝑖𝑑∧𝑡.𝑡𝑛𝑎𝑚𝑒=′𝑀𝐼′)}", "{ 𝑝.𝑝𝑛𝑎𝑚𝑒 | 𝑝∈𝑡𝑒𝑎𝑚𝑠∧∃𝑡 (𝑡∈𝑝𝑙𝑎𝑦𝑒𝑟𝑠∧𝑝.𝑡𝑖𝑑=𝑡.𝑡𝑖𝑑∧𝑡.𝑡𝑛𝑎𝑚𝑒=′𝑀𝐼′)}", "{ 𝑝.𝑝𝑛𝑎𝑚𝑒 | 𝑝∈𝑝𝑙𝑎𝑦𝑒𝑟𝑠∧∃𝑡 (𝑡∈𝑡𝑒𝑎𝑚𝑠∧𝑡.𝑡𝑛𝑎𝑚𝑒=′𝑀𝐼′)}", "{ 𝑝.𝑝𝑛𝑎𝑚𝑒 | 𝑝∈𝑡𝑒𝑎𝑚𝑠∧∃𝑡 (𝑡∈𝑝𝑙𝑎𝑦𝑒𝑟𝑠∧𝑡.𝑡𝑛𝑎𝑚𝑒=′𝑀𝐼′)}"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_39.png"
+  },
+
+  
+   {
+    "id": 40,
+    "type": "MCQ",
+    "question": "A packet with the destination IP address 145.36.109.70 arrives at a router whose routing table is shown. Which interface will the packet be forwarded to?",
+    "note": null,
+    "options": ["E3", "E1", "E2", "E5"],
+    "correctAnswers": [""],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_40.png"
+  },
+
+  
+   {
+    "id": 41,
+    "type": "MCQ",
+    "question": "Let 𝐴 be a 2×2 matrix as given in image. What are the eigenvalues of the matrix 𝐴^13 ?",
+    "note": null,
+    "options": ["1,−1", "2√2,−2√2", "4√2,−4√2", "64√2,−64√2"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_41.png"
+  },
+
+  
+   {
+    "id": 42,
+    "type": "MCQ",
+    "question": "Consider the following four variable Boolean function in sum-of-product form \n\n𝐹(𝑏_3,𝑏_2,𝑏_1,𝑏_0)=Σ(0,2,4,8,10,11,12).",
+    "note": "underscore _ is used to represent the subscripts like this 𝑏₃, 𝑏₂, 𝑏₁, 𝑏₀",
+    "options": ["𝑏̅_1𝑏̅_0+𝑏̅_2𝑏̅_0+𝑏_1𝑏̅_2𝑏_3", "𝑏̅_1 𝑏̅_0+ 𝑏̅_2 𝑏̅_0", "𝑏̅_2𝑏̅_0+𝑏_1𝑏_2𝑏_3", "𝑏̅_0_𝑏̅2+𝑏̅_3"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 43,
+    "type": "MCQ",
+    "question": "Let 𝐺(𝑉,𝐸) be an undirected and unweighted graph with 100 vertices. Let 𝑑(𝑢,𝑣) denote the number of edges in a shortest path between vertices 𝑢 and 𝑣 in 𝑉. Let the maximum value of 𝑑(𝑢,𝑣),𝑢,𝑣∈𝑉 such that 𝑢≠𝑣, be 30. Let 𝑇 be any breadth-first-search tree of 𝐺. Which ONE of the given options is CORRECT for every such graph 𝐺?",
+    "note": null,
+    "options": ["The height of 𝑇 is exactly 15.", "The height of 𝑇 is exactly 30.", "The height of 𝑇 is at least 15.", "The height of 𝑇 is at least 30."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 44,
+    "type": "MCQ",
+    "question": "Placeholder",
+    "note": null,
+    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 45,
+    "type": "MCQ",
+    "question": "Placeholder",
+    "note": null,
+    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 46,
+    "type": "MQ",
+    "question": "Which of the following statement(s) is/are TRUE while computing First and Follow during top down parsing by a compiler?",
+    "note": null,
+    "options": ["For a production 𝐴→𝜖, 𝜖 will be added to 𝐹𝑖𝑟𝑠𝑡(𝐴).", "If there is any input right end marker, it will be added to 𝐹𝑖𝑟𝑠𝑡(𝑆), where 𝑆 is the start symbol.", "For a production 𝐴→𝜖, 𝜖 will be added to 𝐹𝑜𝑙𝑙𝑜𝑤(𝐴).", "If there is any input right end marker, it will be added to 𝐹𝑜𝑙𝑙𝑜𝑤(𝑆), where 𝑆 is the start symbol."],
+    "correctAnswers": ["A","D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 47,
+    "type": "MCQ",
+    "question": "Consider a relational schema 𝑡𝑒𝑎𝑚(𝑛𝑎𝑚𝑒,𝑐𝑖𝑡𝑦,𝑜𝑤𝑛𝑒𝑟), with functional dependencies{𝑛𝑎𝑚𝑒→𝑐𝑖𝑡𝑦,𝑛𝑎𝑚𝑒→𝑜𝑤𝑛𝑒𝑟}. \n\nThe relation 𝑡𝑒𝑎𝑚 is decomposed into two relations, 𝑡1(𝑛𝑎𝑚𝑒,𝑐𝑖𝑡𝑦) and 𝑡2(𝑛𝑎𝑚𝑒,𝑜𝑤𝑛𝑒𝑟). Which of the following statement(s) is/are TRUE?",
+    "note": null,
+    "options": ["The relation 𝑡𝑒𝑎𝑚 is NOT in BCNF.", "The relations 𝑡1 and 𝑡2 are in BCNF.", "The decomposition constitutes a lossless join.", "The relation 𝑡𝑒𝑎𝑚 is NOT in 3NF."],
+    "correctAnswers": ["B","C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 48,
+    "type": "MCQ",
+    "question": "Placeholder",
+    "note": null,
+    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
+    "id": 49,
+    "type": "MCQ",
+    "question": "Placeholder",
+    "note": null,
+    "options": ["Symbol table is responsible for keeping track of the scope of variables.", "Symbol table can be implemented using a binary search tree.", "Symbol table is not required after the parsing phase.", "Symbol table is created during the lexical analysis phase."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null
+  },
+
+  
+   {
     "id": 50,
+    "type": "MCQ",
+    "question": "Consider the following deterministic finite automaton (DFA) defined over the alphabet, Σ={𝑎,𝑏}. Identify which of the following language(s) is/are accepted by the given DFA.",
+    "note": null,
+    "options": ["The set of all strings containing an even number of 𝑏’s.", "The set of all strings containing the pattern 𝑏𝑎𝑏.", "The set of all strings ending with the pattern 𝑏𝑎𝑏.", "The set of all strings not containing the pattern 𝑎𝑏𝑎."],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "/paper_1/que_50.png"
+  },
+
+
+
+  {
+    "id": 51,
     "type": "NAT",
     "question": "Placeholder",
     "note": null,
     "options": [],
-    "correctAnswers": ["O(log n)"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 52,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 53,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 54,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 55,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 56,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 57,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 58,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 59,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 60,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 61,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 62,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 63,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+  
+  {
+    "id": 64,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": null
+  },
+
+
+
+  {
+    "id": 65,
+    "type": "NAT",
+    "question": "Placeholder",
+    "note": null,
+    "options": [],
+    "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0,
     "image": null
   }
+
+
+
 ]

@@ -1,5 +1,7 @@
 USE firebase firestore for storing and showing all users data.
 Play Song in background
 Scroll to top
+Add Another Lines which states TOPIC
+Put question type somewhere
 
-DAY 1: Setup + Initial Working
+DAY 1: Setup + Initial Working - 4 Hours
