@@ -7,7 +7,7 @@ Put question type somewhere
 Monitization:
 1. Add paid papers
 2. charge like 99rs for 1 test 
-3. 1 free attempt pay for unlimited attempts
+3. 1 free attempt pay for unlimited attempts (or score 70+ to unlock another paper)
 
 DAY 1: Setup + Initial Working - 4 Hours
 DAY 2: JSON Data filing

@@ -9,6 +9,8 @@ function Question({
   setSelectedAnswer,
   isFirst,
   isLast,
+  submissionCount,
+  maxSubmissions,
 }) {
   const renderOptions = () => {
     if (question.type === "NAT") {
@@ -74,7 +76,9 @@ function Question({
         <button onClick={onPrev} disabled={isFirst}>
           Previous
         </button>
-        <button onClick={onSaveAnswer}>Save</button>
+
+        <button onClick={onSaveAnswer} disabled={submissionCount >= maxSubmissions}>Save ({submissionCount}/{maxSubmissions}) </button>
+
         <button onClick={onNext} disabled={isLast}>
           Next
         </button>

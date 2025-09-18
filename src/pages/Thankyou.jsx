@@ -1,13 +1,19 @@
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import ScoreCounter from "../components/ScoreCounter";
 
 function Thankyou() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { answers = {}, questions = [] } = location.state || {};
   
   return (
     <div className="container">
       <div className="card text-center">
         <h1 className="mb-3">Thank You!</h1>
         <h2 className="mb-4">Exam Completed Successfully</h2>
+        <h2>Your Final Score:</h2>
+      <ScoreCounter answers={answers} questions={questions} />
         
         <div className="mb-4">
           <h2 className="mb-3">Current Leaderboard</h2>

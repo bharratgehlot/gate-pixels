@@ -16,6 +16,10 @@ function ExamPage() {
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [answers, setAnswers] = useState({});
 
+  // State Management for Max submission limits
+
+  const [submissionCounts, setSubmissionCounts] = useState({});
+
   // Page Navigation
   const navigate = useNavigate();
 
@@ -30,40 +34,45 @@ function ExamPage() {
   const isFirst = currentIndex === 0;
   const isLast = currentIndex === paper_1.length - 1;
 
-  // Handle Save and answer check
+ const handleSaveAnswer = () => {
+  const currentCount = submissionCounts[currentQuestion.id] || 0;
+  const maxSubmissions = currentQuestion.type === "MCQ" ? 1 : 
+                        currentQuestion.type === "MSQ" ? 3 : 5;
+  
+  if (currentCount >= maxSubmissions) return;
 
-  const handleSaveAnswer = () => {
-    let isCorrect = false;
+  let isCorrect = false;
 
-    if (currentQuestion.type === "MSQ") {
-      // Convert selectedAnswer string to array (e.g., "AC" -> ["A", "C"])
-      const selectedArray = selectedAnswer.split("").sort();
-      const correctArray = currentQuestion.correctAnswers.sort();
+  if (currentQuestion.type === "MSQ") {
+    const selectedArray = selectedAnswer.split("").sort();
+    const correctArray = currentQuestion.correctAnswers.sort();
+    isCorrect =
+      selectedArray.length === correctArray.length &&
+      selectedArray.every((val, index) => val === correctArray[index]);
+  } else if (
+    currentQuestion.type === "NAT" &&
+    currentQuestion.correctAnswerRange
+  ) {
+    const userVal = parseFloat(selectedAnswer);
+    const { min, max } = currentQuestion.correctAnswerRange;
+    isCorrect = !isNaN(userVal) && userVal >= min && userVal <= max;
+  } else {
+    isCorrect = currentQuestion.correctAnswers.includes(selectedAnswer);
+  }
 
-      // Check if arrays are identical
-      isCorrect =
-        selectedArray.length === correctArray.length &&
-        selectedArray.every((val, index) => val === correctArray[index]);
-    } else if (
-      currentQuestion.type === "NAT" &&
-      currentQuestion.correctAnswerRange
-    ) {
-      // ✅ Range check for NAT
-      const userVal = parseFloat(selectedAnswer);
-      const { min, max } = currentQuestion.correctAnswerRange;
-      isCorrect = !isNaN(userVal) && userVal >= min && userVal <= max;
-    } else {
-      // MCQ and NAT - single answer check
-      isCorrect = currentQuestion.correctAnswers.includes(selectedAnswer);
-    }
+  setAnswers((prev) => ({
+    ...prev,
+    [currentQuestion.id]: { answer: selectedAnswer, isCorrect },
+  }));
 
-    setAnswers((prev) => ({
-      ...prev,
-      [currentQuestion.id]: { answer: selectedAnswer, isCorrect },
-    }));
+  setSubmissionCounts((prev) => ({
+    ...prev,
+    [currentQuestion.id]: currentCount + 1,
+  }));
 
-    alert(isCorrect ? "Correct!" : "Wrong!");
-  };
+  alert(isCorrect ? "Correct!" : "Wrong!");
+};
+
 
   return (
     <div className="container">
@@ -73,9 +82,9 @@ function ExamPage() {
           Question {questionNumber} of {paper_1.length}
         </h2>
       </div>
-      
-        <ScoreCounter answers={answers} questions={paper_1} />
-     
+
+      <ScoreCounter answers={answers} questions={paper_1} />
+
       <Question
         question={currentQuestion}
         onNext={nextQuestion}
@@ -85,10 +94,18 @@ function ExamPage() {
         setSelectedAnswer={setSelectedAnswer}
         isFirst={isFirst}
         isLast={isLast}
+        submissionCount={submissionCounts[currentQuestion.id] || 0}
+        maxSubmissions={
+          currentQuestion.type === "MCQ"
+            ? 1
+            : currentQuestion.type === "MSQ"
+            ? 3
+            : 5
+        }
       />
 
       <div className="text-center mt-4">
-        <button onClick={() => navigate("/Thankyou")}>Finish Exam</button>
+        <button onClick={() => navigate("/Thankyou", { state: { answers, questions: paper_1 } })}>Finish Exam</button>
       </div>
     </div>
   );
