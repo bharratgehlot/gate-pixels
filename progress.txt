@@ -10,7 +10,9 @@ Monitization:
 3. 1 free attempt pay for unlimited attempts
 
 DAY 1: Setup + Initial Working - 4 Hours
-DAT 2: JSON Data filing
+DAY 2: JSON Data filing
+DAY 3: JSON Data filing
+DAY 4: Score Counter
 
 Domain : for atlest 2 years 1500-2000rs (15 October)
 Google Devloper Account 2500rs

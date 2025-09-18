@@ -146,3 +146,15 @@
   cursor: not-allowed;
   transform: none;
 }
+
+.score-counter {
+  background: white;
+  color: black;
+  padding: 5px 5px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: smaller;
+  max-width: 200px;
+  margin-left: auto;
+  border: 1px solid black;
+}

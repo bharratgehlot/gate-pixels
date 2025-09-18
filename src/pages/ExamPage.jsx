@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import ScoreCounter from "../components/ScoreCounter";
 import paper_1 from "../data/paper_1.json";
 import paper_2 from "../data/paper_2.json";
 import { useState } from "react";
@@ -72,7 +73,9 @@ function ExamPage() {
           Question {questionNumber} of {paper_1.length}
         </h2>
       </div>
-
+      
+        <ScoreCounter answers={answers} questions={paper_1} />
+     
       <Question
         question={currentQuestion}
         onNext={nextQuestion}
