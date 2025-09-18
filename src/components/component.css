@@ -188,7 +188,7 @@
   
   .options-container label {
     padding: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
   
   .navigation-buttons {
@@ -202,7 +202,8 @@
   }
   
   .score-counter {
-    max-width: 150px;
-    font-size: 12px;
+    max-width: 130px;
+    font-size: 11px;
+    padding: 2px 2px;
   }
 }
