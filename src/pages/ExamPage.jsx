@@ -27,6 +27,7 @@ function ExamPage() {
   const nextQuestion = () => {
     setCurrentIndex((prev) => prev + 1);
     setSelectedAnswer(""); // Reset Selection
+    window.scrollTo(0,0); // Scroll to Top
   };
   const prevQuestion = () => setCurrentIndex((prev) => prev - 1);
 
