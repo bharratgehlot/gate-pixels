@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import styles from './ScoreCounter.module.css';
 
 function ScoreCounter({answers, questions}) {
 
@@ -21,7 +22,7 @@ function ScoreCounter({answers, questions}) {
   },[answers, questions]);
 
   return (
-    <div className="score-counter">
+    <div className={styles.scoreCounter}>
       <h3>Score: {score}/100</h3>
     </div>
   )

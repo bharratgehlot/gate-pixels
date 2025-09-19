@@ -1,0 +1,76 @@
+/*
+.scoreCounter {
+  background: rgba(255, 255, 255, 0.89);
+  color: black;
+  padding: 5px 5px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: smaller;
+  max-width: 200px;
+  margin-left: auto;
+  border: 1px solid black;
+}
+
+.cardScore {
+  max-width: none;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  background: #f8f9fa;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+@media (max-width: 440px) {
+  .scoreCounter {
+    max-width: 130px;
+    font-size: 11px;
+    padding: 2px 2px;
+  }
+}
+*/
+
+.scoreCounter {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+  padding: 5px 10px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 140px;
+  margin-left: auto;
+  border: 1px solid #000000;
+}
+
+.cardScore .scoreCounter {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  background: #f8f9fa;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+@media (max-width: 440px) {
+  .scoreCounter {
+    max-width: 120px;
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+   .cardScore .scoreCounter {
+    font-size: 12px;
+    padding: 6px;
+    margin: 15px auto;
+    max-width: 300px;
+  }
+}
+
