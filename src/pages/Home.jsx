@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="container">
       <div className="card text-center">
-        <h1 className="mb-3">Welcome to GATE Prep</h1>
+        <h1 className="mb-3">Welcome to GatePixels</h1>
         <h2 className="mb-4">Test Your Knowledge</h2>
         <p className="mb-4">
           Practice with real GATE questions and improve your scores
