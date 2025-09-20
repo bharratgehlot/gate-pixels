@@ -8,7 +8,8 @@
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
   },
   {
     "id": 2,
@@ -19,7 +20,9 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
+
   },
   {
     "id": 3,
@@ -30,7 +33,8 @@
     "correctAnswers": ["C"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
   },
   {
     "id": 4,
@@ -46,7 +50,8 @@
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
   },
   {
     "id": 5,
@@ -62,7 +67,8 @@
     "correctAnswers": ["C"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": "/paper_1/que_5.png"
+    "image": "/paper_1/que_5.png",
+    "subject": "General Aptitude"
   },
 
   {
@@ -79,7 +85,8 @@
     "correctAnswers": ["C"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
   },
   {
     "id": 7,
@@ -90,7 +97,8 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_7.png"
+    "image": "/paper_1/que_7.png",
+    "subject": "General Aptitude"
   },
   {
     "id": 8,
@@ -101,19 +109,22 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
   },
 
   {
     "id": 9,
     "type": "MCQ",
-    "question": "Placeholder",
-    "note": null,
-    "options": ["Decimal", "Hexadecimal", "Octal", "Binary"],
+    "question": "A square paper, shown in figure (I), is folded along the dotted lines as shown in the figures (II) and (III). Then a few cuts are made as shown in figure (IV). Which one of the following patterns will be obtained when the paper is unfolded?",
+    "note": "Note: The figures shown are representative.",
+    "options": ["A", "B", "C", "D"],
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": "/paper_1/que_9.png",
+    "subject": "General Aptitude"
+
   },
 
   {
@@ -125,7 +136,8 @@
     "correctAnswers": ["B"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "General Aptitude"
   },
 
   {
@@ -142,7 +154,8 @@
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Computer Organization and Architecture (COA)"
   },
 
   {
@@ -159,7 +172,9 @@
     "correctAnswers": ["C"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Compiler Design"
+
   },
 
   {
@@ -176,7 +191,9 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Compiler Design"
+
   },
 
   {
@@ -188,24 +205,28 @@
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Operating Systems (OS)"
+
   },
 
   {
     "id": 15,
     "type": "MCQ",
-    "question": "Placeholder",
+    "question": "A schedule of three database transactions T₁, T₂, and T₃ is shown. Rᵢ(𝐴) and Wᵢ(𝐴) denote read and write of data item 𝐴 by transaction Tᵢ,𝑖=1,2,3. The transaction T₁ aborts at the end. Which other transaction(s) will be required to be rolled back? \n\nR₁(𝑋) 𝑊1(𝑌) R₂(𝑋) R₂(𝑌) R₃(𝑌) 𝐴𝐵𝑂𝑅𝑇(T₁) ",
     "note": null,
     "options": [
-      "Symbol table is responsible for keeping track of the scope of variables.",
-      "Symbol table can be implemented using a binary search tree.",
-      "Symbol table is not required after the parsing phase.",
-      "Symbol table is created during the lexical analysis phase."
+      "Only T₂",
+      "Only T₃",
+      "Both T₂ and T₃",
+      "Neither T₂ nor T₃"
     ],
     "correctAnswers": ["C"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Database Management Systems (DBMS)"
+
   },
 
   {
@@ -222,7 +243,8 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": "/paper_1/que_16.png"
+    "image": "/paper_1/que_16.png",
+    "subject": "Computer Networks (CN)"
   },
 
   {
@@ -239,7 +261,8 @@
     "correctAnswers": ["D"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Discrete Mathematics"
   },
 
   {
@@ -256,41 +279,44 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Algorithms"
   },
 
   {
     "id": 19,
     "type": "MCQ",
-    "question": "Placeholder",
-    "note": null,
+    "question": "Consider the following context-free grammar 𝐺, where 𝑆, 𝐴, and 𝐵 are the variables (non-terminals), 𝑎 and 𝑏 are the terminal symbols, 𝑆 is the start variable, and the rules of 𝐺 are described as:",
+    "note": "Which ONE of the languages 𝐿(𝐺) is accepted by 𝐺?",
     "options": [
-      "Symbol table is responsible for keeping track of the scope of variables.",
-      "Symbol table can be implemented using a binary search tree.",
-      "Symbol table is not required after the parsing phase.",
-      "Symbol table is created during the lexical analysis phase."
+      "𝐿(𝐺) = {a²bⁿ | 𝑛 ≥ 1} ∪ {aⁿb² | 𝑛 ≥ 1}",
+      "𝐿(𝐺) = {aⁿa²ⁿ | 𝑛 ≥ 1} ∪ {a²ⁿbⁿ | 𝑛 ≥ 1}",
+      "𝐿(𝐺) = {aⁿbⁿ | 𝑛 ≥ 1}",
+      "𝐿(𝐺) = {a²ⁿb²ⁿ | 𝑛 ≥ 1}"
     ],
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image":"/paper_1/que_19.png",
+    "subject": "Theory of Computation (TOC)"
   },
 
   {
     "id": 20,
     "type": "MCQ",
-    "question": "Placeholder",
-    "note": null,
+    "question": "Consider the following recurrence relation: \n𝑇(𝑛)=2𝑇(𝑛−1)+𝑛2ⁿ for 𝑛 > 0, 𝑇(0)=1.",
+    "note": "Which ONE of the following options is CORRECT?",
     "options": [
-      "Symbol table is responsible for keeping track of the scope of variables.",
-      "Symbol table can be implemented using a binary search tree.",
-      "Symbol table is not required after the parsing phase.",
-      "Symbol table is created during the lexical analysis phase."
+      "𝑇(𝑛)= Θ(n²2ⁿ)",
+      "𝑇(𝑛)=Θ(𝑛2ⁿ)",
+      "𝑇(𝑛)=Θ((log n)²2ⁿ",
+      "𝑇(𝑛)=Θ(4ⁿ)"
     ],
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null
+    "image": null,
+    "subject": "Algorithms"
   },
 
   {
@@ -307,7 +333,8 @@
     "correctAnswers": ["B", "D"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_21.png"
+    "image": "/paper_1/que_21.png",
+    "subject": "Database Management Systems (DBMS)"
   },
 
   {
@@ -324,7 +351,8 @@
     "correctAnswers": ["B", "D"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Computer Networks (CN)"
   },
 
   {
@@ -341,7 +369,8 @@
     "correctAnswers": ["A", "D"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_23.png"
+    "image": "/paper_1/que_23.png",
+    "subject": "Engineering Mathematics"
   },
 
   {
@@ -358,7 +387,8 @@
     "correctAnswers": ["B", "D"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
   },
 
   {
@@ -375,7 +405,8 @@
     "correctAnswers": ["B", "D"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
   },
 
   {
@@ -392,7 +423,8 @@
     "correctAnswers": ["A", "B"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Programming and Data Structures"
   },
 
   {
@@ -409,7 +441,8 @@
     "correctAnswers": ["A", "B", "C"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_27.png"
+    "image": "/paper_1/que_27.png",
+    "subject": "Computer Organization and Architecture (COA)"
   },
 
   {
@@ -426,7 +459,8 @@
     "correctAnswers": ["D"],
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
   },
 
   {
@@ -438,7 +472,8 @@
     "correctAnswerRange": { "min": 21, "max": 21 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_29.png"
+    "image": "/paper_1/que_29.png",
+    "subject": "Operating Systems (OS)"
   },
 
   {
@@ -450,7 +485,8 @@
     "correctAnswerRange": { "min": 195, "max": 195 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Discrete Mathematics"
   },
 
   {
@@ -462,7 +498,8 @@
     "correctAnswerRange": { "min": -2.1, "max": -1.9 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_31.png"
+    "image": "/paper_1/que_31.png",
+    "subject": "Engineering Mathematics"
   },
 
   {
@@ -474,7 +511,8 @@
     "correctAnswerRange": { "min": 0.49, "max": 0.51 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Engineering Mathematics"
   },
 
   {
@@ -486,7 +524,8 @@
     "correctAnswerRange": { "min": 435, "max": 435 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_33.png"
+    "image": "/paper_1/que_33.png",
+    "subject": "Algorithms"
   },
 
   {
@@ -498,7 +537,8 @@
     "correctAnswerRange": { "min": 25, "max": 25 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": "/paper_1/que_34.png"
+    "image": "/paper_1/que_34.png",
+    "subject": "Programming and Data Structures"
   },
 
   {
@@ -510,7 +550,8 @@
     "correctAnswerRange": { "min": 5, "max": 5 },
     "marks": 1,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Programming and Data Structures"
   },
 
   {
@@ -522,7 +563,8 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "Computer Organization and Architecture (COA)"
   },
 
   {
@@ -534,7 +576,8 @@
     "correctAnswers": ["B"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "Computer Organization and Architecture (COA)"
   },
 
   {
@@ -546,7 +589,8 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_38.png"
+    "image": "/paper_1/que_38.png",
+    "subject": "Operating Systems (OS)"
   },
 
   {
@@ -563,7 +607,8 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_39.png"
+    "image": "/paper_1/que_39.png",
+    "subject": "Database Management Systems (DBMS)"
   },
 
   {
@@ -575,7 +620,8 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_40.png"
+    "image": "/paper_1/que_40.png",
+    "subject": "Computer Networks (CN)"
   },
 
   {
@@ -587,7 +633,8 @@
     "correctAnswers": ["D"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_41.png"
+    "image": "/paper_1/que_41.png",
+    "subject": "Engineering Mathematics"
   },
 
   {
@@ -604,7 +651,8 @@
     "correctAnswers": ["A"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
   },
 
   {
@@ -621,7 +669,8 @@
     "correctAnswers": ["C"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": null
+    "image": null,
+    "subject": "Algorithms"
   },
 
   {
@@ -638,7 +687,8 @@
     "correctAnswers": ["C"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_44.png"
+    "image": "/paper_1/que_44.png",
+    "subject": "Theory of Computation (TOC)"
   },
 
   {
@@ -655,7 +705,8 @@
     "correctAnswers": ["C"],
     "marks": 2,
     "negativeMarks": 0.66,
-    "image": "/paper_1/que_45.png"
+    "image": "/paper_1/que_45.png",
+    "subject": "Theory of Computation (TOC)"
   },
 
   {
@@ -672,7 +723,8 @@
     "correctAnswers": ["A", "D"],
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Compiler Design"
   },
 
   {
@@ -689,7 +741,8 @@
     "correctAnswers": ["B", "C"],
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Database Management Systems (DBMS)"
   },
 
   {
@@ -706,7 +759,8 @@
     "correctAnswers": ["B", "D"],
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_48.png"
+    "image": "/paper_1/que_48.png",
+    "subject": "Discrete Mathematics"
   },
 
   {
@@ -723,7 +777,8 @@
     "correctAnswers": ["B"],
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Discrete Mathematics"
   },
 
   {
@@ -740,7 +795,8 @@
     "correctAnswers": ["C"],
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_50.png"
+    "image": "/paper_1/que_50.png",
+    "subject": "Theory of Computation (TOC)"
   },
 
   {
@@ -752,7 +808,8 @@
     "correctAnswerRange": { "min": 65468, "max": 65468 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Operating Systems (OS)"
   },
 
   {
@@ -764,7 +821,8 @@
     "correctAnswerRange": { "min": 6, "max": 6 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_52.png"
+    "image": "/paper_1/que_52.png",
+    "subject": "Compiler Design"
   },
 
   {
@@ -776,7 +834,8 @@
     "correctAnswerRange": { "min": 11.83, "max": 11.87 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_53.png"
+    "image": "/paper_1/que_53.png",
+    "subject": "Computer Organization and Architecture (COA)"
   },
 
   {
@@ -788,7 +847,8 @@
     "correctAnswerRange": { "min": 6, "max": 6 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_54.png"
+    "image": "/paper_1/que_54.png",
+    "subject": "Operating Systems (OS)"
   },
 
   {
@@ -800,7 +860,8 @@
     "correctAnswerRange": { "min": 26, "max": 26 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_55.png"
+    "image": "/paper_1/que_55.png",
+    "subject": "Database Management Systems (DBMS)"
   },
 
   {
@@ -812,7 +873,8 @@
     "correctAnswerRange": { "min": 0.949, "max": 0.952 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Engineering Mathematics"
   },
 
   {
@@ -824,7 +886,8 @@
     "correctAnswerRange": { "min": 7, "max": 7 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_57.png"
+    "image": "/paper_1/que_57.png",
+    "subject": "Computer Networks (CN)"
   },
 
   {
@@ -836,7 +899,8 @@
     "correctAnswerRange": { "min": 0.3, "max": 0.302 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_58.png"
+    "image": "/paper_1/que_58.png",
+    "subject": "Engineering Mathematics"
   },
 
   {
@@ -848,7 +912,8 @@
     "correctAnswerRange": { "min": 5, "max": 5 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_59.png"
+    "image": "/paper_1/que_59.png",
+    "subject": "Digital Logic Design (DLD)"
   },
 
   {
@@ -860,7 +925,8 @@
     "correctAnswerRange": { "min": 7, "max": 8 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_60.png"
+    "image": "/paper_1/que_60.png",
+    "subject": "Digital Logic Design (DLD)"
   },
 
   {
@@ -872,7 +938,8 @@
     "correctAnswerRange": { "min": 5, "max": 5 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_61.png"
+    "image": "/paper_1/que_61.png",
+    "subject": "Programming and Data Structures"
   },
 
   {
@@ -884,7 +951,8 @@
     "correctAnswerRange": { "min": 5, "max": 5 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Programming and Data Structures"
   },
 
   {
@@ -896,7 +964,8 @@
     "correctAnswerRange": { "min": 46, "max": 46 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_63.png"
+    "image": "/paper_1/que_63.png",
+    "subject": "Programming and Data Structures"
   },
 
   {
@@ -908,7 +977,8 @@
     "correctAnswerRange": { "min": 5, "max": 5 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": "/paper_1/que_64.png"
+    "image": "/paper_1/que_64.png",
+    "subject": "Algorithms"
   },
 
   {
@@ -920,6 +990,7 @@
     "correctAnswerRange": { "min": 10, "max": 11 },
     "marks": 2,
     "negativeMarks": 0,
-    "image": null
+    "image": null,
+    "subject": "Programming and Data Structures"
   }
 ]

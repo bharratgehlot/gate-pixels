@@ -7,6 +7,7 @@ Add Another Lines which states TOPIC
 Put question type somewhere
 Strict Mode - Disables copy paste, add timer, descreased attempts.
 Relief Mode - Easy, no time limit, copy pasted enabled
+Add Subjects in each question where they belong
 
 PAPERS:
 
@@ -73,6 +74,7 @@ DAY 1: Setup + Initial Working - 4 Hours
 DAY 2: JSON Data filing - 2 hours
 DAY 3: JSON Data filing - 1.5 hour
 DAY 4: Score Counter - 1.5 hour
+DAY 5: Score Counter UI - 1 hour
 
 Domain : for atlest 2 years 1500-2000rs (15 October)
 
