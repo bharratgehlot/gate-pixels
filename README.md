@@ -1,3 +1,3 @@
-# GATE APP
+# GatePixels
 
-GATE APP
+gate-pixels

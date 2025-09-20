@@ -75,6 +75,7 @@ DAY 2: JSON Data filing - 2 hours
 DAY 3: JSON Data filing - 1.5 hour
 DAY 4: Score Counter - 1.5 hour
 DAY 5: Score Counter UI - 1 hour
+DAY 6: QuestionInfo UI - 2 hours
 
 Domain : for atlest 2 years 1500-2000rs (15 October)
 
