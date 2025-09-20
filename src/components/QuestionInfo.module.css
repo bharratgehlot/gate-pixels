@@ -1,0 +1,75 @@
+.questionInfo {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+  padding: 5px 10px;
+  border-radius: 1px;
+  text-align: center;
+ 
+  font-weight: 600;
+  flex: 1;
+  border: 1px solid #000000;
+}
+
+.infoContent {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoItem {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+  margin-right: 3px;
+}
+
+.value {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.negativeValue {
+  font-weight: 600;
+  color: #e74c3c;
+}
+
+
+/*
+@media (max-width: 440px) {
+  .questionInfo {
+    max-width: 250px;
+    padding: 5px 10px;
+  }
+  
+  .infoContent {
+    gap: 8px;
+  }
+
+  .infoItem{
+    font-size: 8px;
+  }
+}
+*/
+
+@media (max-width: 440px) {
+  .questionInfo {
+    padding: 4px 8px; /* Adjusted padding for smaller screens */
+    min-width: 0; /* Helps flexbox calculate shrinking correctly */
+  }
+ 
+  .infoContent {
+    gap: 10px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    
+  }
+
+  .infoItem {
+    font-size: 10px; /* INCREASED from 8px for better readability */
+  }
+}

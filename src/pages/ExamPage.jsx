@@ -4,9 +4,11 @@ import paper_1 from "../data/paper_1.json";
 import paper_2 from "../data/paper_2.json";
 import { useState } from "react";
 import Question from "../components/Question";
+import QuestionInfo from "../components/QuestionInfo";
 
 function ExamPage() {
   // State Management for Questions Array
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentQuestion = paper_1[currentIndex];
   const questionNumber = currentIndex + 1;
@@ -21,59 +23,65 @@ function ExamPage() {
   const [submissionCounts, setSubmissionCounts] = useState({});
 
   // Page Navigation
+
   const navigate = useNavigate();
 
   // Questions Previous/Next
+
   const nextQuestion = () => {
     setCurrentIndex((prev) => prev + 1);
     setSelectedAnswer(""); // Reset Selection
-    window.scrollTo(0,0); // Scroll to Top
+    window.scrollTo(0, 0); // Scroll to Top
   };
   const prevQuestion = () => setCurrentIndex((prev) => prev - 1);
 
   // Boundary checks
+
   const isFirst = currentIndex === 0;
   const isLast = currentIndex === paper_1.length - 1;
 
- const handleSaveAnswer = () => {
-  const currentCount = submissionCounts[currentQuestion.id] || 0;
-  const maxSubmissions = currentQuestion.type === "MCQ" ? 1 : 
-                        currentQuestion.type === "MSQ" ? 3 : 5;
-  
-  if (currentCount >= maxSubmissions) return;
+  const handleSaveAnswer = () => {
+    const currentCount = submissionCounts[currentQuestion.id] || 0;
+    const maxSubmissions =
+      currentQuestion.type === "MCQ"
+        ? 1
+        : currentQuestion.type === "MSQ"
+        ? 3
+        : 5;
 
-  let isCorrect = false;
+    if (currentCount >= maxSubmissions) return;
 
-  if (currentQuestion.type === "MSQ") {
-    const selectedArray = selectedAnswer.split("").sort();
-    const correctArray = currentQuestion.correctAnswers.sort();
-    isCorrect =
-      selectedArray.length === correctArray.length &&
-      selectedArray.every((val, index) => val === correctArray[index]);
-  } else if (
-    currentQuestion.type === "NAT" &&
-    currentQuestion.correctAnswerRange
-  ) {
-    const userVal = parseFloat(selectedAnswer);
-    const { min, max } = currentQuestion.correctAnswerRange;
-    isCorrect = !isNaN(userVal) && userVal >= min && userVal <= max;
-  } else {
-    isCorrect = currentQuestion.correctAnswers.includes(selectedAnswer);
-  }
+    let isCorrect = false;
 
-  setAnswers((prev) => ({
-    ...prev,
-    [currentQuestion.id]: { answer: selectedAnswer, isCorrect },
-  }));
+    if (currentQuestion.type === "MSQ") {
+      const selectedArray = selectedAnswer.split("").sort();
+      const correctArray = currentQuestion.correctAnswers.sort();
+      isCorrect =
+        selectedArray.length === correctArray.length &&
+        selectedArray.every((val, index) => val === correctArray[index]);
+    } else if (
+      currentQuestion.type === "NAT" &&
+      currentQuestion.correctAnswerRange
+    ) {
+      const userVal = parseFloat(selectedAnswer);
+      const { min, max } = currentQuestion.correctAnswerRange;
+      isCorrect = !isNaN(userVal) && userVal >= min && userVal <= max;
+    } else {
+      isCorrect = currentQuestion.correctAnswers.includes(selectedAnswer);
+    }
 
-  setSubmissionCounts((prev) => ({
-    ...prev,
-    [currentQuestion.id]: currentCount + 1,
-  }));
+    setAnswers((prev) => ({
+      ...prev,
+      [currentQuestion.id]: { answer: selectedAnswer, isCorrect },
+    }));
 
-  alert(isCorrect ? "Correct!" : "Wrong!");
-};
+    setSubmissionCounts((prev) => ({
+      ...prev,
+      [currentQuestion.id]: currentCount + 1,
+    }));
 
+    alert(isCorrect ? "Correct!" : "Wrong!");
+  };
 
   return (
     <div className="container">
@@ -84,7 +92,19 @@ function ExamPage() {
         </h2>
       </div>
 
-      <ScoreCounter answers={answers} questions={paper_1} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          gap: "10px",
+          marginBottom: "20px",
+        }}
+      >
+        
+        <QuestionInfo question={currentQuestion} />
+        <ScoreCounter answers={answers} questions={paper_1} />
+      </div>
 
       <Question
         question={currentQuestion}
@@ -106,7 +126,13 @@ function ExamPage() {
       />
 
       <div className="text-center mt-4">
-        <button onClick={() => navigate("/Thankyou", { state: { answers, questions: paper_1 } })}>Finish Exam</button>
+        <button
+          onClick={() =>
+            navigate("/Thankyou", { state: { answers, questions: paper_1 } })
+          }
+        >
+          Finish Exam
+        </button>
       </div>
     </div>
   );

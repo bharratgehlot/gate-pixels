@@ -1,37 +1,3 @@
-/*
-.scoreCounter {
-  background: rgba(255, 255, 255, 0.89);
-  color: black;
-  padding: 5px 5px;
-  border-radius: 1px;
-  text-align: center;
-  font-size: smaller;
-  max-width: 200px;
-  margin-left: auto;
-  border: 1px solid black;
-}
-
-.cardScore {
-  max-width: none;
-  margin: 20px auto;
-  padding: 10px;
-  font-size: 18px;
-  border: 2px solid #007bff;
-  border-radius: 8px;
-  background: #f8f9fa;
-  text-align: center;
-  font-weight: 600;
-  color: #2c3e50;
-}
-
-@media (max-width: 440px) {
-  .scoreCounter {
-    max-width: 130px;
-    font-size: 11px;
-    padding: 2px 2px;
-  }
-}
-*/
 
 .scoreCounter {
   background: rgba(255, 255, 255, 0.95);
@@ -39,10 +5,10 @@
   padding: 5px 10px;
   border-radius: 1px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px !important;
   font-weight: 600;
-  max-width: 160px;
-  margin-left: auto;
+  /*max-width: 160px;
+  margin-left: auto;*/
   border: 1px solid #000000;
 }
 
@@ -58,12 +24,12 @@
   font-weight: 600;
   color: #2c3e50;
 }
-
+/*
 @media (max-width: 440px) {
   .scoreCounter {
-    max-width: 120px;
-    font-size: 10px;
-    padding: 3px 6px;
+    max-width: 100px;
+    font-size: 8px;
+    padding: 2px 4px;
   }
 
    .cardScore .scoreCounter {
@@ -73,4 +39,23 @@
     max-width: 300px;
   }
 }
+*/
 
+@media (max-width: 440px) {
+  .scoreCounter {
+    /* REMOVED max-width to let the component size itself */
+    font-size: 12px !important; /* INCREASED from 8px for readability */
+    padding: 4px 8px; /* Adjusted padding to match the other component */
+    white-space: nowrap; /* Prevents the text from line-breaking */
+  }
+
+  /* This style for a different context remains the same */
+  .cardScore .scoreCounter {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 15px auto;
+    max-width: 300px;
+  }
+
+
+}
