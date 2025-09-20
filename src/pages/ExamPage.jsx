@@ -5,6 +5,7 @@ import paper_2 from "../data/paper_2.json";
 import { useState } from "react";
 import Question from "../components/Question";
 import QuestionInfo from "../components/QuestionInfo";
+import styles from './ExamPage.module.css';
 
 function ExamPage() {
   // State Management for Questions Array
@@ -84,24 +85,15 @@ function ExamPage() {
   };
 
   return (
-    <div className="container">
-      <div className="text-center mb-3">
-        <h1 className="mb-2">GATE Practice Test</h1>
-        <h2 className="mb-4">
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h1 className={styles.title}>GATE Practice Test</h1>
+        <h2 className={styles.subtitle}>
           Question {questionNumber} of {paper_1.length}
         </h2>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "center",
-          gap: "10px",
-          marginBottom: "20px",
-        }}
-      >
-        
+      <div className={styles.infoContainer}>
         <QuestionInfo question={currentQuestion} />
         <ScoreCounter answers={answers} questions={paper_1} />
       </div>
@@ -125,8 +117,9 @@ function ExamPage() {
         }
       />
 
-      <div className="text-center mt-4">
+      <div className={styles.finishSection}>
         <button
+          className={styles.finishButton}
           onClick={() =>
             navigate("/Thankyou", { state: { answers, questions: paper_1 } })
           }

@@ -4,7 +4,6 @@
   padding: 5px 10px;
   border-radius: 1px;
   text-align: center;
- 
   font-weight: 600;
   flex: 1;
   border: 1px solid #000000;
@@ -39,26 +38,9 @@
 }
 
 
-/*
 @media (max-width: 440px) {
   .questionInfo {
-    max-width: 250px;
-    padding: 5px 10px;
-  }
-  
-  .infoContent {
-    gap: 8px;
-  }
-
-  .infoItem{
-    font-size: 8px;
-  }
-}
-*/
-
-@media (max-width: 440px) {
-  .questionInfo {
-    padding: 4px 8px; /* Adjusted padding for smaller screens */
+    padding: 6px 10px; /* Adjusted padding for smaller screens */
     min-width: 0; /* Helps flexbox calculate shrinking correctly */
   }
  
@@ -66,10 +48,9 @@
     gap: 10px;
     flex-wrap: wrap; 
     justify-content: center;
-    
   }
 
   .infoItem {
-    font-size: 10px; /* INCREASED from 8px for better readability */
+    font-size: 12px; /* INCREASED from 8px for better readability */
   }
 }
