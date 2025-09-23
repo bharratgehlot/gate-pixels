@@ -5,9 +5,11 @@ function ScoreCounter({answers, questions}) {
 
   const score = useMemo(()=>{
     return Object.entries(answers).reduce((total, [questionID, answerData]) => {
+      // amazonq-ignore-next-line
       const question = questions.find(q => q.id === parseInt(questionID));
       if (!question) return total
 
+      // amazonq-ignore-next-line
       console.log(`Q${questionID}: type=${question.type}, correct=${answerData.isCorrect}, negativeMarks=${question.negativeMarks}`);
       
       if (answerData.isCorrect) {

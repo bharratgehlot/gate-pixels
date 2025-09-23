@@ -63,15 +63,19 @@ function ExamPage() {
 
   // Show Loading state
 
-  if (loading || questions.length === 0) {
-    return (
-      <div className={styles.container}>
-        <div className={styles.header}>
+if (loading || questions.length === 0) {
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <div className={styles.loadingContainer}>
+          <div className={styles.spinner}></div>
           <h1 className={styles.title}>Loading Questions...</h1>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
   // Question rendering
 
