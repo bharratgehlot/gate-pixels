@@ -70,12 +70,28 @@ Monitization:
 2. charge like 99rs for 1 test 
 3. 1 free attempt pay for unlimited attempts (or score 70+ to unlock another paper)
 
+=== WEEK 1 ===
+
 DAY 1: Setup + Initial Working - 4 Hours
 DAY 2: JSON Data filing - 2 hours
 DAY 3: JSON Data filing - 1.5 hour
 DAY 4: Score Counter - 1.5 hour
 DAY 5: Score Counter UI - 1 hour
-DAY 6: QuestionInfo UI - 2 hours
+DAY 6: QuestionInfo UI - 3 hours
+DAY 7: Added multiple paper support
+
+this weeks total: 
+
+=== WEEK 2 ===
+
+DAY 8
+DAY 9
+DAY 10
+DAY 11 
+DAY 12
+DAY 13
+DAY 14
+
 
 Domain : for atlest 2 years 1500-2000rs (15 October)
 

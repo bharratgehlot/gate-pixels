@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "How many input combinations are possible for a 3-input logic gate?",
+    "note": null,
+    "options": ["3", "6", "8", "9"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 2,
+    "type": "MCQ",
+    "question": "What is the output of an XOR gate when both inputs are 1?",
+    "note": null,
+    "options": ["0", "1", "undefined", "depends on gate"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 3,
+    "type": "MCQ",
+    "question": "Which flip-flop is also called a delay flip-flop?",
+    "note": null,
+    "options": ["SR", "JK", "D", "T"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 4,
+    "type": "MCQ",
+    "question": "How many flip-flops are needed to construct a MOD-8 counter?",
+    "note": null,
+    "options": ["2", "3", "4", "8"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 5,
+    "type": "MCQ",
+    "question": "What is the decimal equivalent of binary 1101?",
+    "note": null,
+    "options": ["11", "12", "13", "14"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "question": "Which gate is called a universal gate?",
+    "note": null,
+    "options": ["AND", "OR", "NAND", "XOR"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 7,
+    "type": "MCQ",
+    "question": "What is the 2's complement of binary 1010?",
+    "note": null,
+    "options": ["0101", "0110", "1010", "1011"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "question": "How many minterms are there for a 3-variable Boolean function?",
+    "note": null,
+    "options": ["3", "6", "8", "9"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 9,
+    "type": "MCQ",
+    "question": "What is the purpose of a multiplexer?",
+    "note": null,
+    "options": ["Data selection", "Data distribution", "Data storage", "Data conversion"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  },
+  {
+    "id": 10,
+    "type": "MCQ",
+    "question": "Which number system uses base 16?",
+    "note": null,
+    "options": ["Binary", "Octal", "Decimal", "Hexadecimal"],
+    "correctAnswers": ["D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Digital Logic Design (DLD)"
+  }
+]

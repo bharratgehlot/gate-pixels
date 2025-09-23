@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "Which layer of OSI model handles routing?",
+    "note": null,
+    "options": ["Physical", "Data Link", "Network", "Transport"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 2,
+    "type": "MCQ",
+    "question": "What is the default port number for HTTP?",
+    "note": null,
+    "options": ["21", "23", "80", "443"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 3,
+    "type": "MCQ",
+    "question": "Which protocol is used for reliable data transfer?",
+    "note": null,
+    "options": ["UDP", "TCP", "IP", "ICMP"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 4,
+    "type": "MCQ",
+    "question": "What is the maximum size of an Ethernet frame?",
+    "note": null,
+    "options": ["1024 bytes", "1500 bytes", "2048 bytes", "4096 bytes"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 5,
+    "type": "MCQ",
+    "question": "Which algorithm is used in distance vector routing?",
+    "note": null,
+    "options": ["Dijkstra's", "Bellman-Ford", "Floyd-Warshall", "Prim's"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "question": "What does ARP stand for?",
+    "note": null,
+    "options": [
+      "Address Resolution Protocol",
+      "Automatic Routing Protocol", 
+      "Application Request Protocol",
+      "Access Request Protocol"
+    ],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 7,
+    "type": "MCQ",
+    "question": "Which congestion control algorithm is used by TCP?",
+    "note": null,
+    "options": ["Slow Start", "Fast Recovery", "Congestion Avoidance", "All of the above"],
+    "correctAnswers": ["D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "question": "What is the purpose of NAT?",
+    "note": null,
+    "options": [
+      "Network security",
+      "Address translation",
+      "Data compression",
+      "Error detection"
+    ],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 9,
+    "type": "MCQ",
+    "question": "Which protocol is used for email transfer?",
+    "note": null,
+    "options": ["HTTP", "FTP", "SMTP", "SNMP"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  },
+  {
+    "id": 10,
+    "type": "MCQ",
+    "question": "What is the subnet mask for a /24 network?",
+    "note": null,
+    "options": ["255.255.0.0", "255.255.255.0", "255.255.255.128", "255.255.255.192"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Computer Networks (CN)"
+  }
+]

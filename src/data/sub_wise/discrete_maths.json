@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "How many edges are there in a complete graph with n vertices?",
+    "note": null,
+    "options": ["n", "n-1", "n(n-1)/2", "n²"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 2,
+    "type": "MCQ",
+    "question": "What is the negation of ∀x P(x)?",
+    "note": null,
+    "options": ["∀x ¬P(x)", "∃x ¬P(x)", "¬∀x P(x)", "∃x P(x)"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 3,
+    "type": "MCQ",
+    "question": "Which of the following is a tautology?",
+    "note": null,
+    "options": ["p ∧ q", "p ∨ ¬p", "p → q", "p ∧ ¬p"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 4,
+    "type": "MCQ",
+    "question": "What is the chromatic number of a complete graph Kn?",
+    "note": null,
+    "options": ["1", "2", "n-1", "n"],
+    "correctAnswers": ["D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 5,
+    "type": "MCQ",
+    "question": "How many permutations are possible for n distinct objects?",
+    "note": null,
+    "options": ["n", "2^n", "n!", "n²"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "question": "What is the degree of each vertex in a complete graph Kn?",
+    "note": null,
+    "options": ["n", "n-1", "n/2", "2n"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 7,
+    "type": "MCQ",
+    "question": "Which relation is both reflexive and symmetric but not transitive?",
+    "note": null,
+    "options": ["Equivalence relation", "Partial order", "Neither", "Depends on set"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "question": "What is the number of subsets of a set with n elements?",
+    "note": null,
+    "options": ["n", "n!", "2^n", "n²"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 9,
+    "type": "MCQ",
+    "question": "Which graph traversal uses a stack?",
+    "note": null,
+    "options": ["BFS", "DFS", "Both", "Neither"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  },
+  {
+    "id": 10,
+    "type": "MCQ",
+    "question": "What is the minimum number of colors needed to color a bipartite graph?",
+    "note": null,
+    "options": ["1", "2", "3", "Depends on vertices"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Discrete Mathematics"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "What is the time complexity of binary search?",
+    "note": null,
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 2,
+    "type": "MCQ",
+    "question": "Which sorting algorithm has the best average case time complexity?",
+    "note": null,
+    "options": ["Bubble Sort", "Selection Sort", "Merge Sort", "Insertion Sort"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 3,
+    "type": "MCQ",
+    "question": "What is the space complexity of merge sort?",
+    "note": null,
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 4,
+    "type": "MCQ",
+    "question": "Which algorithm is used to find shortest path in weighted graphs?",
+    "note": null,
+    "options": ["BFS", "DFS", "Dijkstra's", "Kruskal's"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 5,
+    "type": "MCQ",
+    "question": "What is the worst-case time complexity of quicksort?",
+    "note": null,
+    "options": ["O(n log n)", "O(n²)", "O(log n)", "O(n)"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "question": "Which data structure is used in BFS traversal?",
+    "note": null,
+    "options": ["Stack", "Queue", "Priority Queue", "Heap"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 7,
+    "type": "MCQ",
+    "question": "What is the principle behind dynamic programming?",
+    "note": null,
+    "options": [
+      "Divide and conquer",
+      "Greedy choice",
+      "Optimal substructure",
+      "Backtracking"
+    ],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "question": "Which algorithm finds minimum spanning tree?",
+    "note": null,
+    "options": ["Dijkstra's", "Floyd-Warshall", "Kruskal's", "Bellman-Ford"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 9,
+    "type": "MCQ",
+    "question": "What is the time complexity of heap sort?",
+    "note": null,
+    "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  },
+  {
+    "id": 10,
+    "type": "MCQ",
+    "question": "Which technique is used in the knapsack problem?",
+    "note": null,
+    "options": ["Greedy", "Dynamic Programming", "Divide and Conquer", "Backtracking"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Algorithms"
+  }
+]

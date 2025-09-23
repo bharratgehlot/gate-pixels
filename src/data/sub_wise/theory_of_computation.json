@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "Which automaton accepts regular languages?",
+    "note": null,
+    "options": ["Finite Automaton", "Pushdown Automaton", "Turing Machine", "Linear Bounded Automaton"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 2,
+    "type": "MCQ",
+    "question": "Which grammar generates context-free languages?",
+    "note": null,
+    "options": ["Type 0", "Type 1", "Type 2", "Type 3"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 3,
+    "type": "MCQ",
+    "question": "What is the pumping lemma used for?",
+    "note": null,
+    "options": ["Proving language regularity", "Proving language is not regular", "Grammar construction", "Automaton design"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 4,
+    "type": "MCQ",
+    "question": "Which problem is undecidable?",
+    "note": null,
+    "options": ["Membership problem for CFG", "Halting problem", "Equivalence of DFA", "Emptiness of regular language"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 5,
+    "type": "MCQ",
+    "question": "What is the closure property of regular languages under union?",
+    "note": null,
+    "options": ["Not closed", "Closed", "Sometimes closed", "Depends on alphabet"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "question": "Which parsing technique is used for context-free grammars?",
+    "note": null,
+    "options": ["Finite automaton", "Pushdown automaton", "Turing machine", "Linear bounded automaton"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 7,
+    "type": "MCQ",
+    "question": "What is the time complexity class P?",
+    "note": null,
+    "options": ["Polynomial time", "Exponential time", "Logarithmic time", "Constant time"],
+    "correctAnswers": ["A"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "question": "Which language is accepted by a Turing machine?",
+    "note": null,
+    "options": ["Regular", "Context-free", "Context-sensitive", "Recursively enumerable"],
+    "correctAnswers": ["D"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 9,
+    "type": "MCQ",
+    "question": "What is the relationship between NFA and DFA?",
+    "note": null,
+    "options": ["NFA is more powerful", "DFA is more powerful", "Both are equivalent", "Cannot be compared"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  },
+  {
+    "id": 10,
+    "type": "MCQ",
+    "question": "Which operation is NOT closed for context-free languages?",
+    "note": null,
+    "options": ["Union", "Concatenation", "Intersection", "Kleene closure"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": null,
+    "subject": "Theory of Computation (TOC)"
+  }
+]
