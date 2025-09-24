@@ -94,7 +94,7 @@ this weeks total: 15.5 hours / 25 hours
 
 === WEEK 2 ===
 
-DAY 8
+DAY 8: Added 10 questions in compiler design - 2 hours
 DAY 9
 DAY 10
 DAY 11 
