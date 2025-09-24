@@ -118,5 +118,22 @@
     "negativeMarks": 0.33,
     "image": null,
     "subject": "Theory of Computation (TOC)"
-  }
+  },
+  {
+  "id": 11,
+  "type": "MCQ",
+  "question": "Which one of the following regular expressions is equivalent to the language accepted by the given DFA?",
+  "note": null,
+  "options": [
+    "0∗1(0 + 10∗1)∗",
+    "0∗(10∗11)∗0∗",
+    "0∗1(010∗1)∗0∗",
+    "0(1 + 0∗10∗1)∗0∗"
+  ],
+  "correctAnswers": ["A"],
+  "marks": 1,
+  "negativeMarks": 0.33,
+   "image": "sub_wise\\compiler_design\\paper_1\\ques_8.jpg",
+  "subject": "Compiler Design"
+}
 ]

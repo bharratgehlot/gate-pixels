@@ -9,6 +9,10 @@ Strict Mode - Disables copy paste, add timer, descreased attempts.
 Relief Mode - Easy, no time limit, copy pasted enabled
 Add Subjects in each question where they belong
 
+Account Section
+Show history of every paper used attempted with marks and date (logged In Only)
+Basic Account creation to store User's progress
+
 PAPERS:
 
 GATE CSE 2025 (2 papers)
@@ -17,7 +21,13 @@ GATE CSE 2023 (2 papers)
 GATE DA 2024 (2 papers)
 GATE DA 2025 (2 papers)
 
+JSON RULES:
 
+nagative marks only for MCQ, other MSQ and NAT type question should have value 0.
+2 number mcq nagative marks is 0.66 and for 1 mark it is 0.33
+NAT type questions are in this format:
+"options": [],
+  "correctAnswerRange": { "min": 6, "max": 6 },
 
 MOCK TESTS:
 
@@ -78,9 +88,9 @@ DAY 3: JSON Data filing - 1.5 hour
 DAY 4: Score Counter - 1.5 hour
 DAY 5: Score Counter UI - 1 hour
 DAY 6: QuestionInfo UI - 3 hours
-DAY 7: Added multiple paper support
+DAY 7: Added multiple paper support - 2.5  hours
 
-this weeks total: 
+this weeks total: 15.5 hours / 25 hours
 
 === WEEK 2 ===
 
