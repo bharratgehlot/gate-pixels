@@ -22,3 +22,7 @@ Firebase:
 
 Added firebase to store name + paper data
 
+HomePage
+
+use dummy name option
+leaderboard resets every 7 days
