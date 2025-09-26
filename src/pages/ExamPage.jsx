@@ -205,7 +205,7 @@ if (loading || questions.length === 0) {
         <button
           className={styles.finishButton}
           onClick={() =>
-            navigate("/Thankyou", { state: { answers, questions } })
+            navigate("/Thankyou", { state: { answers, questions, examCategory,selectedPaper } })
           }
         >
           Finish Exam

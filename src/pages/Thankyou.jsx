@@ -3,22 +3,46 @@ import { useLocation } from "react-router-dom";
 import ScoreCounter from "../components/ScoreCounter";
 import scoreStyles from '../components/ScoreCounter.module.css';
 import styles from './ThankYou.module.css';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { saveScore, getTopScores } from "../firebase/firestore";
 
 
 function Thankyou() {
   const navigate = useNavigate();
+  const hasSaved = useRef(false);
   const location = useLocation();
-  const { answers = {}, questions = [] } = location.state || {};
+  const { answers = {}, questions = [], examCategory, selectedPaper } = location.state || {};
   const [userName, setUserName] = useState("");
-
+  const [leaderboard, setLeaderboard] = useState([]);
 
 useEffect(() => {
   const storedName = localStorage.getItem("userName");
+  const storedScore = localStorage.getItem("finalScore");
+  const alreadySaved = localStorage.getItem("scoreSaved");
+
   if (storedName) {
     setUserName(storedName);
   }
-}, []);
+/*
+  // Use the score from localStorage (calculated by ScoreCounter)
+  if (storedName && storedScore &&!hasSaved.current) {
+    saveScore(storedName, parseFloat(storedScore), examCategory, selectedPaper);
+    hasSaved.current = true; // Add this line
+  }
+
+*/
+  if (storedName && storedScore && !alreadySaved) {
+    saveScore(storedName, parseFloat(storedScore), examCategory, selectedPaper);
+    localStorage.setItem("scoreSaved", "true");
+  }
+
+  // Load leaderboard
+  const loadLeaderboard = async () => {
+    const scores = await getTopScores();
+    setLeaderboard(scores);
+  };
+  loadLeaderboard();
+}, [examCategory, selectedPaper]);
 
 
 
@@ -41,18 +65,22 @@ useEffect(() => {
 
         </div>
         
-        <div className={styles.leaderboard}>
-          <h2 className={styles.subtitle}>Current Leaderboard</h2>
-          <div className={styles.leaderboardItem}>
-            <p><strong>🥇 User 1:</strong> 50 marks</p>
+
+
+       <div className={styles.leaderboard}>
+         <h2 className={styles.subtitle}>Top Scores</h2>
+        {leaderboard.slice(0, 10).map((entry, index) => (
+          <div key={index} className={styles.leaderboardItem}>
+            <p><strong>
+              {index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`} {entry.name}:
+            </strong> {entry.score} marks</p>
           </div>
-          <div className={styles.leaderboardItem}>
-            <p><strong>🥈 User 3:</strong> 30 marks</p>
-          </div>
-          <div className={styles.leaderboardItem}>
-            <p><strong>🥉 User 5:</strong> 08 marks</p>
-          </div>
-        </div>
+         ))}
+       </div>
+
+
+
+
         
         <button 
           className={styles.button}

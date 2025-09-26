@@ -30,6 +30,8 @@ function Home() {
       return;
     }
     localStorage.setItem("userName", userName.trim());
+    localStorage.removeItem("scoreSaved"); 
+
     navigate("/ExamPage", {
       state: { examCategory, selectedPaper },
     });
