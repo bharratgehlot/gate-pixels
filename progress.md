@@ -1,17 +1,3 @@
-FEATURES:
-
-USE firebase firestore for storing and showing all users data.
-Play Song in background
-Scroll to top
-Add Another Lines which states TOPIC
-Put question type somewhere
-Strict Mode - Disables copy paste, add timer, descreased attempts.
-Relief Mode - Easy, no time limit, copy pasted enabled
-Add Subjects in each question where they belong
-
-Account Section
-Show history of every paper used attempted with marks and date (logged In Only)
-Basic Account creation to store User's progress
 
 PAPERS:
 
