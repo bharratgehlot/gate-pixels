@@ -81,7 +81,7 @@ this weeks total: 15.5 hours / 25 hours
 === WEEK 2 ===
 
 DAY 8: Added 10 questions in compiler design - 2.5 hours
-DAY 9
+DAY 9 Added Profinity filter - 2.5 Hours
 DAY 10
 DAY 11 
 DAY 12
