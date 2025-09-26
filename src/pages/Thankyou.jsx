@@ -3,21 +3,42 @@ import { useLocation } from "react-router-dom";
 import ScoreCounter from "../components/ScoreCounter";
 import scoreStyles from '../components/ScoreCounter.module.css';
 import styles from './ThankYou.module.css';
+import { useEffect, useState } from "react";
 
 
 function Thankyou() {
   const navigate = useNavigate();
   const location = useLocation();
   const { answers = {}, questions = [] } = location.state || {};
-  
+  const [userName, setUserName] = useState("");
+
+
+useEffect(() => {
+  const storedName = localStorage.getItem("userName");
+  if (storedName) {
+    setUserName(storedName);
+  }
+}, []);
+
+
+
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1 className={styles.title}>Thank You!</h1>
+
+        <h1 className={styles.title}>
+          Thank You!
+        </h1>
+
+
         <h2 className={styles.subtitle}>Exam Completed Successfully</h2>
-        <h2 className={styles.subtitle}>Your Final Score:</h2>
+
+        <h2 className={styles.subtitle}> {userName ? ` ${userName}` : ""}' Final Score:</h2>
+
         <div className={scoreStyles.cardScore}>
+
           <ScoreCounter answers={answers} questions={questions} />
+
         </div>
         
         <div className={styles.leaderboard}>

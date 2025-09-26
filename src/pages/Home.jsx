@@ -4,14 +4,32 @@ import { useState } from "react";
 
 function Home() {
   const navigate = useNavigate();
-  const [examCategory, setExamCategory] = useState("papers"); // Holds values between prev year paper and subject specific question - papers or subjects
 
-  const [selectedPaper, setSelectedPaper] = useState("2025_morning");
-  // Holds which paper in papers exactly or which subject on subject list
+  // States and data
+
+  const [examCategory, setExamCategory] = useState("papers"); // Holds values between - papers or subjects
+  const [selectedPaper, setSelectedPaper] = useState("2025_morning"); // Holds which paper or which sunject
+  const [userName, setUserName] = useState(""); // Name of user for later use
+  const [nameError, setNameError] = useState(""); // Name validation
+
+  // Handle Name Errors
+
+  const validateName = (name) => {
+    if (!name.trim()) return "Name is required";
+    if (name.length > 30) return "Max 30 characters";
+    if (!/^[a-zA-Z\s]+$/.test(name)) return "Only letters and spaces allowed";
+    return "";
+  };
 
   // Function to handle the examstart button
 
   const handleStartExam = () => {
+    const error = validateName(userName);
+    if (error) {
+      setNameError(error);
+      return;
+    }
+    localStorage.setItem("userName", userName.trim());
     navigate("/ExamPage", {
       state: { examCategory, selectedPaper },
     });
@@ -35,6 +53,20 @@ function Home() {
         <p className={styles.description}>
           Practice with real GATE questions and improve your scores
         </p>
+
+        <div className={styles.selectionContainer}>
+          <div className={styles.dropdown}>
+            <label>Your Name:</label>
+            <input
+              type="text"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              placeholder="Enter your name"
+               className={styles.nameInput}
+            />
+            {nameError && <span className={styles.error}>{nameError}</span>}
+          </div>
+        </div>
 
         <div className={styles.selectionContainer}>
           <div className={styles.dropdown}>

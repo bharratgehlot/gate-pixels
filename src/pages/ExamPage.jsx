@@ -23,7 +23,7 @@ function ExamPage() {
   const [questions, setQuestions] = useState([]); // new
   const [loading, setLoading] = useState(true); // new
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  
   // State Management for Right/Wrong Answers
 
   const [selectedAnswer, setSelectedAnswer] = useState("");
