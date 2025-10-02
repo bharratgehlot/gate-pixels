@@ -13,17 +13,19 @@ function ExamPage() {
 
   // get paper selection from router state from Home.jsx
 
-  const { examCategory, selectedPaper } = location.state || {
-    examCategory: "papers",
-    selectedPaper: "2025_morning",
-  };
+  const { examCategory, selectedPaper, selectedSubjectPart } =
+    location.state || {
+      examCategory: "papers",
+      selectedPaper: "2025_morning",
+      selectedSubjectPart: "1",
+    };
 
   // State Management for Questions Array
 
   const [questions, setQuestions] = useState([]); // new
   const [loading, setLoading] = useState(true); // new
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   // State Management for Right/Wrong Answers
 
   const [selectedAnswer, setSelectedAnswer] = useState("");
@@ -46,8 +48,22 @@ function ExamPage() {
             `../data/prev_papers/${selectedPaper}.json`
           );
         } else {
-          // Load subject-wise questions
-          questionData = await import(`../data/sub_wise/${selectedPaper}.json`);
+          const subjectParts = {
+            compiler_design: ["1", "2"],
+            operating_system: ["1", "2"],
+          };
+
+          if (subjectParts[selectedPaper] && selectedSubjectPart) {
+            const paperFile = `paper_${selectedSubjectPart}`;
+            questionData = await import(
+              `../data/sub_wise/${selectedPaper}/${paperFile}.json`
+            );
+          } else {
+            // Fallback to single file for subjects without multiple papers
+            questionData = await import(
+              `../data/sub_wise/${selectedPaper}.json`
+            );
+          }
         }
 
         setQuestions(questionData.default);
@@ -59,23 +75,22 @@ function ExamPage() {
     };
 
     loadQuestions();
-  }, [examCategory, selectedPaper, navigate]);
+  }, [examCategory, selectedPaper, selectedSubjectPart, navigate]);
 
   // Show Loading state
 
-if (loading || questions.length === 0) {
-  return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <div className={styles.loadingContainer}>
-          <div className={styles.spinner}></div>
-          <h1 className={styles.title}>Loading Questions...</h1>
+  if (loading || questions.length === 0) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <div className={styles.loadingContainer}>
+            <div className={styles.spinner}></div>
+            <h1 className={styles.title}>Loading Questions...</h1>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
-
+    );
+  }
 
   // Question rendering
 
@@ -164,7 +179,19 @@ if (loading || questions.length === 0) {
         engineering_maths: "Engineering Mathematics",
         dld: "Digital Logic Design",
       };
-      return `GATE Practice - ${subjectNames[selectedPaper] || selectedPaper}`;
+
+      const subjectParts = {
+        compiler_design: ["1", "2"],
+        operating_system: ["1", "2"],
+      };
+
+      const baseName = subjectNames[selectedPaper] || selectedPaper;
+
+      if (subjectParts[selectedPaper] && selectedSubjectPart) {
+        return `GATE Practice - ${baseName} (Paper ${selectedSubjectPart})`;
+      }
+
+      return `GATE Practice - ${baseName}`;
     }
   };
 
@@ -205,7 +232,15 @@ if (loading || questions.length === 0) {
         <button
           className={styles.finishButton}
           onClick={() =>
-            navigate("/Thankyou", { state: { answers, questions, examCategory,selectedPaper } })
+            navigate("/Thankyou", {
+              state: {
+                answers,
+                questions,
+                examCategory,
+                selectedPaper,
+                selectedSubjectPart,
+              },
+            })
           }
         >
           Finish Exam

@@ -8,9 +8,10 @@ function Home() {
   // States and data
 
   const [examCategory, setExamCategory] = useState("papers"); // Holds values between - papers or subjects
-  const [selectedPaper, setSelectedPaper] = useState("2025_morning"); // Holds which paper or which sunject
+  const [selectedPaper, setSelectedPaper] = useState("2025_morning"); // Holds which paper or which subject
   const [userName, setUserName] = useState(""); // Name of user for later use
   const [nameError, setNameError] = useState(""); // Name validation
+  const [selectedSubjectPart, setSelectedSubjectPart] = useState("1");
 
   // Handle Name Errors
 
@@ -19,6 +20,21 @@ function Home() {
     if (name.length > 30) return "Max 30 characters";
     if (!/^[a-zA-Z\s]+$/.test(name)) return "Only letters and spaces allowed";
     return "";
+  };
+
+  // Defines which subjects have multiple parts
+
+  const subjectParts = {
+    compiler_design: ["1", "2"],
+    operating_system: ["1", "2"],
+    // add more subjects here
+  };
+
+  // Added Subject change handler
+
+  const handleSubjectChange = (e) => {
+    setSelectedPaper(e.target.value);
+    setSelectedSubjectPart("1"); // Reset to paper 1
   };
 
   // Function to handle the examstart button
@@ -30,10 +46,10 @@ function Home() {
       return;
     }
     localStorage.setItem("userName", userName.trim());
-    localStorage.removeItem("scoreSaved"); 
+    localStorage.removeItem("scoreSaved");
 
     navigate("/ExamPage", {
-      state: { examCategory, selectedPaper },
+      state: { examCategory, selectedPaper, selectedSubjectPart },
     });
   };
 
@@ -43,8 +59,9 @@ function Home() {
     const newCategory = e.target.value; // gets either "papers", "subjects", "mock_tests"
     setExamCategory(newCategory); // updates the category
     setSelectedPaper(
-      newCategory === "papers" ? "2025_morning" : "compiler_design"
+      newCategory === "papers" ? "2025_morning" : "general_aptitude"
     );
+    setSelectedSubjectPart("1");
   };
 
   return (
@@ -64,7 +81,7 @@ function Home() {
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
               placeholder="Enter your name"
-               className={styles.nameInput}
+              className={styles.nameInput}
             />
             {nameError && <span className={styles.error}>{nameError}</span>}
           </div>
@@ -94,7 +111,7 @@ function Home() {
             ) : (
               <select
                 value={selectedPaper}
-                onChange={(e) => setSelectedPaper(e.target.value)}
+                onChange={handleSubjectChange}
               >
                 <option value="general_aptitude">General Aptitude</option>
                 <option value="engineering_maths">
@@ -106,19 +123,35 @@ function Home() {
                   Programming and Data Structures
                 </option>
                 <option value="algorithms">Algorithms</option>
-                <option value="dld">Digital Logic Design (DLD)</option>
-                <option value="dbms">Database Management Systems (DBMS)</option>
+                <option value="dld">Digital Logic Design</option>
+                <option value="dbms">Database Management Systems</option>
                 <option value="theory_of_computation">
                   Theory of Computation
                 </option>
                 <option value="computer_networks">Computer Networks</option>
                 <option value="coa">
-                  Computer Organization and Architecture
+                  COA
                 </option>
                 <option value="compiler_design">Compiler Design</option>
               </select>
             )}
           </div>
+
+          {examCategory === "subjects" && subjectParts[selectedPaper] && (
+            <div className={styles.dropdown}>
+              <label>Paper:</label>
+              <select
+                value={selectedSubjectPart}
+                onChange={(e) => setSelectedSubjectPart(e.target.value)}
+              >
+                {subjectParts[selectedPaper].map((part) => (
+                  <option key={part} value={part}>
+                    Paper {part}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
         </div>
 
         <button
