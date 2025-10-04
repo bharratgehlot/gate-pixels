@@ -18,7 +18,7 @@ function Home() {
   const validateName = (name) => {
     if (!name.trim()) return "Name is required";
     if (name.length > 30) return "Max 30 characters";
-    if (!/^[a-zA-Z\s]+$/.test(name)) return "Only letters and spaces allowed";
+    if (!/^[a-zA-Z0-9\s-]+$/.test(name)) return "Only letters, number and spaces allowed";
     return "";
   };
 
@@ -27,6 +27,7 @@ function Home() {
   const subjectParts = {
     compiler_design: ["1", "2"],
     operating_system: ["1", "2"],
+    coa: ["1", "2"]
     // add more subjects here
   };
 

@@ -82,7 +82,7 @@ this weeks total: 15.5 hours / 25 hours
 
 DAY 8: Added 10 questions in compiler design - 2.5 hours
 DAY 9: Added Profinity filter - 3 Hours
-DAY 10: 
+DAY 10: Improved Leaderboard UI - 1 Hour
 DAY 11: 
 DAY 12: 
 DAY 13: 

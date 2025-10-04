@@ -1,13 +1,14 @@
 import { collection, addDoc, getDocs, orderBy, query, limit } from 'firebase/firestore';
 import { db } from './config';
 
-export const saveScore = async (userName, score, examType, examPaper) => {
+export const saveScore = async (userName, score, examType, examPaper, totalMarks) => {
   try {
     await addDoc(collection(db, 'scores'), {
       name: userName,
       score: score,
       examType: examType,
       examPaper: examPaper,
+      totalMarks: totalMarks,
       timestamp: new Date()
     });
   } catch (error) {

@@ -51,6 +51,7 @@ function ExamPage() {
           const subjectParts = {
             compiler_design: ["1", "2"],
             operating_system: ["1", "2"],
+            coa: ["1", "2"]
           };
 
           if (subjectParts[selectedPaper] && selectedSubjectPart) {

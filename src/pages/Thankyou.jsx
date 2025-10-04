@@ -30,11 +30,13 @@ function Thankyou() {
     }
 
     if (storedName && storedScore && !alreadySaved) {
+      const totalMarks = questions.reduce((sum,q) => sum + q.marks, 0)
       saveScore(
         storedName,
         parseFloat(storedScore),
         examCategory,
-        selectedPaper
+        selectedPaper,
+        totalMarks
       );
       localStorage.setItem("scoreSaved", "true");
     }
@@ -73,24 +75,33 @@ function Thankyou() {
               <p>Loading leaderboard...</p>
             </div>
           ) : (
-            leaderboard.slice(0, 10).map((entry, index) => (
-              <div key={index} className={styles.leaderboardItem}>
-                <p>
-                  <strong>
-                    {index === 0
-                      ? "🥇"
-                      : index === 1
-                      ? "🥈"
-                      : index === 2
-                      ? "🥉"
-                      : `${index + 1}.`}{" "}
-                    {filterProfanity(entry.name)}:
-                  </strong>{" "}
-                  {Math.round(entry.score * 100) / 100} marks
-                </p>
-              </div>
-            ))
-          )}
+    <table className={styles.leaderboardTable}>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Paper</th>
+          <th>Marks</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {leaderboard.slice(0, 10).map((entry, index) => (
+          <tr key={index}>
+            <td>
+              {index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : index + 1}
+            </td>
+            <td>{filterProfanity(entry.name)}</td>
+            <td>{entry.examPaper || 'N/A'}</td>
+
+            <td>{Math.round(entry.score * 100) / 100}{entry.totalMarks ? `/${entry.totalMarks}` : ''}</td>
+            <td>{entry.timestamp ? new Date(entry.timestamp.seconds * 1000).toLocaleDateString() : 'N/A'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+          }
         </div>
 
         <button className={styles.button} onClick={() => navigate("/")}>

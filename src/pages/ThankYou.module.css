@@ -29,18 +29,7 @@
   margin-bottom: 1.5rem;
 }
 
-.leaderboard {
-  margin-bottom: 2rem;
-}
 
-.leaderboardItem {
-  margin-bottom: 1rem;
-}
-
-.leaderboardItem p {
-  margin: 0;
-  font-size: 1.1rem;
-}
 
 .button {
   background: linear-gradient(45deg, #007bff, #0056b3);
@@ -78,6 +67,44 @@
   animation: spin 1s linear infinite;
 }
 
+.leaderboard {
+  margin-bottom: 2rem;
+}
+
+.leaderboardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.leaderboardTable th {
+  background: #2c3e50;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.leaderboardTable td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+}
+
+.leaderboardTable tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.leaderboardTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -96,6 +123,16 @@
   .subtitle {
     font-size: 1.5rem;
   }
+
+   .leaderboardTable {
+    font-size: 0.8rem;
+  }
+  
+  .leaderboardTable th,
+  .leaderboardTable td {
+    padding: 8px 6px;
+  }
+
 }
 
 @media (max-width: 440px) {
@@ -124,7 +161,4 @@
     width: 100%;
   }
   
-  .leaderboardItem p {
-    font-size: 1rem;
-  }
 }
