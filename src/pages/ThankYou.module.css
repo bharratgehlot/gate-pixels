@@ -7,8 +7,8 @@
 .card {
   background: white;
   border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   border: 1px solid #e9ecef;
   text-align: center;
@@ -18,27 +18,25 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .subtitle {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #34495e;
   margin-bottom: 1.5rem;
 }
 
-
-
 .button {
   background: linear-gradient(45deg, #007bff, #0056b3);
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
@@ -69,31 +67,35 @@
 
 .leaderboard {
   margin-bottom: 2rem;
+  overflow-x: auto;
 }
 
 .leaderboardTable {
   width: 100%;
-  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
   margin-top: 1rem;
   background: white;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #dee2e6; /* Add this line */
 }
 
 .leaderboardTable th {
   background: #2c3e50;
   color: white;
-  padding: 12px;
+  padding: 10px 12px;
   text-align: center;
   font-weight: 600;
   font-size: 0.9rem;
+  border: 1px solid #dee2e6;
 }
 
 .leaderboardTable td {
   padding: 8px 10px;
   border-bottom: 1px solid #e9ecef;
   font-size: 0.9rem;
+  border: 1px solid #dee2e6;
 }
 
 .leaderboardTable tbody tr:hover {
@@ -104,61 +106,80 @@
   border-bottom: none;
 }
 
-
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 @media (max-width: 768px) {
   .container {
     padding: 15px;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .subtitle {
     font-size: 1.5rem;
   }
 
-   .leaderboardTable {
-    font-size: 0.8rem;
-  }
-  
-  .leaderboardTable th,
-  .leaderboardTable td {
-    padding: 8px 6px;
+  .leaderboardTable {
+    font-size: 0.75rem;
   }
 
+  .leaderboardTable th,
+  .leaderboardTable td {
+    padding: 6px 4px;
+  }
 }
 
 @media (max-width: 440px) {
   .container {
     padding: 10px;
   }
-  
+
   .title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .subtitle {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-  
+
   .card {
     padding: 15px;
     margin: 10px 0;
   }
-  
+
   .button {
-    padding: 10px 16px;
+    padding: 8px 14px;
     font-size: 14px;
     width: 100%;
   }
-  
+
+  .leaderboardTable {
+    font-size: 0.7rem;
+    min-width: 320px;
+  }
+
+  .leaderboardTable th,
+  .leaderboardTable td {
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
+
+  .leaderboardTable th {
+    font-size: 0.8rem;
+  }
+
+  .dateColumn {
+    display: none;
+  }
 }

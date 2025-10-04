@@ -82,7 +82,7 @@ function Thankyou() {
           <th>Username</th>
           <th>Paper</th>
           <th>Marks</th>
-          <th>Date</th>
+          <th className={styles.dateColumn} >Date</th>
         </tr>
       </thead>
       <tbody>
@@ -95,7 +95,7 @@ function Thankyou() {
             <td>{entry.examPaper || 'N/A'}</td>
 
             <td>{Math.round(entry.score * 100) / 100}{entry.totalMarks ? `/${entry.totalMarks}` : ''}</td>
-            <td>{entry.timestamp ? new Date(entry.timestamp.seconds * 1000).toLocaleDateString() : 'N/A'}</td>
+            <td className={styles.dateColumn} >{entry.timestamp ? new Date(entry.timestamp.seconds * 1000).toLocaleDateString() : 'N/A'}</td>
           </tr>
         ))}
       </tbody>

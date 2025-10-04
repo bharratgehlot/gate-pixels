@@ -35,7 +35,7 @@ const customBadWords = [
   "chinaal", "chinnal", "raand", "veshya",
   
   // Caste/community slurs
-  "chamar", "bhangi", "neech", "kala", "kaala", "gora", "firangi",
+  "chamar", "bhangi", "neech", "kaala", "gora", "firangi",
   
   // Religious slurs
   "kafir", "mlecha", "yavan", "katua", "katwa", "jihadi",
