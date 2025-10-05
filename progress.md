@@ -92,7 +92,7 @@ DAY 8: Added 10 questions in compiler design - 2.5 hours
 DAY 9: Added Profinity filter - 3 Hours
 DAY 10: Improved Leaderboard UI - 1 Hour
 DAY 11: Improved Leaderboard UI - 1.5 Hour
-DAY 12: 
+DAY 12: Added Right/Wrong feedback colors - 2 hours
 DAY 13: 
 DAY 14: 
 
