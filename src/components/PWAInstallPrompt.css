@@ -1,0 +1,67 @@
+/* Create src/components/PWAInstallPrompt.css */
+.pwa-prompt {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: slideUp 0.3s ease;
+}
+
+.pwa-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.pwa-content h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.pwa-content p {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.pwa-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.install-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dismiss-btn {
+  background: #f8f9fa;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@media (min-width: 768px) {
+  .pwa-prompt {
+    left: auto;
+    right: 20px;
+    max-width: 350px;
+  }
+}

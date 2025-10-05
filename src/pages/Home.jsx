@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
 import { useState } from "react";
+import PWAInstallPrompt from "../components/PWAInstallPrompt";
+
 
 function Home() {
   const navigate = useNavigate();
@@ -163,6 +165,7 @@ function Home() {
           START EXAM
         </button>
       </div>
+    <PWAInstallPrompt />
     </div>
   );
 }
