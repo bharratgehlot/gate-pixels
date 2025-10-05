@@ -174,7 +174,7 @@ function ExamPage() {
         algorithms: "Algorithms",
         computer_networks: "Computer Networks",
         programming_and_data_structures: "Programming & Data Structures",
-        coa: "Computer Organization & Architecture",
+        coa: "COA",
         theory_of_computation: "Theory of Computation",
         discrete_maths: "Discrete Mathematics",
         engineering_maths: "Engineering Mathematics",

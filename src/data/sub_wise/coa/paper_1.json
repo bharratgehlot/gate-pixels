@@ -8,7 +8,7 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -20,7 +20,7 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -32,7 +32,7 @@
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -44,7 +44,7 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -56,7 +56,7 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -68,7 +68,7 @@
     "correctAnswers": ["A"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -80,7 +80,7 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -92,7 +92,7 @@
     "correctAnswers": ["B"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -104,7 +104,7 @@
     "correctAnswers": ["C"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   },
   {
@@ -116,7 +116,247 @@
     "correctAnswers": ["C"],
     "marks": 1,
     "negativeMarks": 0.33,
-    "image": null,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 11,
+    "type": "MCQ",
+    "question": "What is the main purpose of virtual memory?",
+    "note": null,
+    "options": ["Increase physical memory", "Provide memory protection", "Allow programs larger than physical memory", "Speed up memory access"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 12,
+    "type": "MCQ",
+    "question": "Which component is responsible for instruction decoding?",
+    "note": null,
+    "options": ["ALU", "Control Unit", "Memory Unit", "Input/Output Unit"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 13,
+    "type": "MCQ",
+    "question": "What is the purpose of TLB (Translation Lookaside Buffer)?",
+    "note": null,
+    "options": ["Store instructions", "Cache page table entries", "Store data", "Buffer I/O operations"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 14,
+    "type": "MCQ",
+    "question": "Which type of memory is non-volatile?",
+    "note": null,
+    "options": ["RAM", "Cache", "ROM", "Registers"],
+    "correctAnswers": ["C"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 15,
+    "type": "MCQ",
+    "question": "What is the main advantage of superscalar architecture?",
+    "note": null,
+    "options": ["Lower power consumption", "Multiple instruction execution per cycle", "Simpler design", "Reduced cost"],
+    "correctAnswers": ["B"],
+    "marks": 1,
+    "negativeMarks": 0.33,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 16,
+    "type": "MCQ",
+    "question": "In a 32-bit system with 4KB page size, how many bits are used for page offset?",
+    "note": null,
+    "options": ["10", "12", "14", "16"],
+    "correctAnswers": ["B"],
+    "marks": 2,
+    "negativeMarks": 0.66,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 17,
+    "type": "MCQ",
+    "question": "What is the effective access time if cache hit rate is 90% with cache access time 10ns and memory access time 100ns?",
+    "note": null,
+    "options": ["19ns", "28ns", "55ns", "91ns"],
+    "correctAnswers": ["A"],
+    "marks": 2,
+    "negativeMarks": 0.66,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 18,
+    "type": "MCQ",
+    "question": "In a 5-stage pipeline, what is the maximum speedup achievable?",
+    "note": null,
+    "options": ["3", "4", "5", "6"],
+    "correctAnswers": ["C"],
+    "marks": 2,
+    "negativeMarks": 0.66,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 19,
+    "type": "MCQ",
+    "question": "Which technique is used to handle write operations in cache?",
+    "note": null,
+    "options": ["Write-through only", "Write-back only", "Both write-through and write-back", "Neither"],
+    "correctAnswers": ["C"],
+    "marks": 2,
+    "negativeMarks": 0.66,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 20,
+    "type": "MCQ",
+    "question": "What is the main advantage of set-associative cache over direct-mapped cache?",
+    "note": null,
+    "options": ["Faster access", "Lower cost", "Reduced conflict misses", "Simpler implementation"],
+    "correctAnswers": ["C"],
+    "marks": 2,
+    "negativeMarks": 0.66,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 21,
+    "type": "MSQ",
+    "question": "Which of the following are types of cache misses?",
+    "note": null,
+    "options": ["Compulsory miss", "Capacity miss", "Conflict miss", "Coherence miss"],
+    "correctAnswers": ["A", "B", "C"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 22,
+    "type": "MSQ",
+    "question": "Which of the following are pipeline hazards?",
+    "note": null,
+    "options": ["Structural hazard", "Data hazard", "Control hazard", "Memory hazard"],
+    "correctAnswers": ["A", "B", "C"],
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 23,
+    "type": "MSQ",
+    "question": "Which of the following are characteristics of RISC architecture?",
+    "note": null,
+    "options": ["Simple instruction set", "Fixed instruction length", "Load-store architecture", "Complex addressing modes"],
+    "correctAnswers": ["A", "B", "C"],
+    "marks": 2,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 24,
+    "type": "MSQ",
+    "question": "Which of the following improve CPU performance?",
+    "note": null,
+    "options": ["Pipelining", "Superscalar execution", "Branch prediction", "Cache memory"],
+    "correctAnswers": ["A", "B", "C", "D"],
+    "marks": 2,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 25,
+    "type": "NAT",
+    "question": "A cache has 16 blocks with block size of 64 bytes. What is the total cache size in bytes?",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswerRange": { "min": 1024, "max": 1024 },
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 26,
+    "type": "NAT",
+    "question": "In a 4-way set associative cache with 64 sets, how many cache blocks are there in total?",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswerRange": { "min": 256, "max": 256 },
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 27,
+    "type": "NAT",
+    "question": "A system has 32-bit virtual address and 4KB page size. How many bits are required for the page number?",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswerRange": { "min": 20, "max": 20 },
+    "marks": 1,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 28,
+    "type": "NAT",
+    "question": "Calculate the effective memory access time if cache hit rate is 95%, cache access time is 5ns, and memory access time is 50ns.",
+    "note": "(Answer in nanoseconds, rounded to one decimal place)",
+    "options": [],
+    "correctAnswerRange": { "min": 7.2, "max": 7.8 },
+    "marks": 2,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 29,
+    "type": "NAT",
+    "question": "A processor has a 5-stage pipeline with stage delays of 10ns, 8ns, 12ns, 9ns, and 11ns. What is the pipeline throughput in instructions per second?",
+    "note": "(Answer in millions of instructions per second, rounded to nearest integer)",
+    "options": [],
+    "correctAnswerRange": { "min": 83, "max": 84 },
+    "marks": 2,
+    "negativeMarks": 0,
+    "image": "",
+    "subject": "Computer Organization and Architecture (COA)"
+  },
+  {
+    "id": 30,
+    "type": "NAT",
+    "question": "A 2-way set associative cache has 512 sets and block size of 32 bytes. What is the total cache size in KB?",
+    "note": "(Answer in integer)",
+    "options": [],
+    "correctAnswerRange": { "min": 32, "max": 32 },
+    "marks": 2,
+    "negativeMarks": 0,
+    "image": "",
     "subject": "Computer Organization and Architecture (COA)"
   }
 ]
