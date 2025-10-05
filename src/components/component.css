@@ -144,6 +144,39 @@
   transform: none;
 }
 
+/* Feedback styles */
+.option-correct {
+  background: #d4edda !important;
+  border-color: #28a745 !important;
+  color: #155724;
+}
+
+.option-wrong {
+  background: #f8d7da !important;
+  border-color: #dc3545 !important;
+  color: #721c24;
+}
+
+.option-missed {
+  background: #fff3cd !important;
+  border-color: #ffc107 !important;
+  color: #856404;
+}
+
+.nat-correct {
+  background: #d4edda !important;
+  border-color: #28a745 !important;
+  color: #155724;
+}
+
+.nat-wrong {
+  background: #f8d7da !important;
+  border-color: #dc3545 !important;
+  color: #721c24;
+}
+
+
+
 @media (max-width: 440px) {
   .question-container {
     padding: 15px;

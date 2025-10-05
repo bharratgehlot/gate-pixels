@@ -11,13 +11,32 @@ function Question({
   isLast,
   submissionCount,
   maxSubmissions,
+  showFeedback,
+  isCorrect,
 }) {
+  const getOptionFeedbackClass = (optionValue) => {
+    if (!showFeedback) return "";
+
+    const isSelected =
+      question.type === "MCQ"
+        ? selectedAnswer === optionValue
+        : selectedAnswer.includes(optionValue);
+
+    const isCorrectOption = question.correctAnswers.includes(optionValue);
+    if (isSelected && isCorrectOption) return "option-correct";
+    if (isSelected && !isCorrectOption) return "option-wrong";
+    if (!isSelected && isCorrectOption) return "option-missed";
+
+  };
+
   const renderOptions = () => {
     if (question.type === "NAT") {
       return (
         <input
           type="text"
-          className="nat-input"
+          className={`nat-input ${
+            showFeedback ? (isCorrect ? "nat-correct" : "nat-wrong") : ""
+          }`}
           placeholder="Enter your answer"
           value={selectedAnswer}
           onChange={(e) => setSelectedAnswer(e.target.value)}
@@ -31,7 +50,7 @@ function Question({
       const optionValue = String.fromCharCode(65 + index); // A, B, C, D
 
       return (
-        <label key={index}>
+        <label key={index} className={getOptionFeedbackClass(optionValue)}>
           <input
             type={inputType}
             name={`q${question.id}`}
@@ -72,12 +91,18 @@ function Question({
       )}
 
       <div className="options-container">{renderOptions()}</div>
+
       <div className="navigation-buttons">
         <button onClick={onPrev} disabled={isFirst}>
           Previous
         </button>
 
-        <button onClick={onSaveAnswer} disabled={submissionCount >= maxSubmissions}>Save ({submissionCount}/{maxSubmissions}) </button>
+        <button
+          onClick={onSaveAnswer}
+          disabled={submissionCount >= maxSubmissions}
+        >
+          Save ({submissionCount}/{maxSubmissions}){" "}
+        </button>
 
         <button onClick={onNext} disabled={isLast}>
           Next

@@ -35,6 +35,10 @@ function ExamPage() {
 
   const [submissionCounts, setSubmissionCounts] = useState({});
 
+  // Feedback status
+
+  const [showFeedback, setShowFeedback] = useState(false);
+
   // Dynamic paper loading
 
   useEffect(() => {
@@ -51,7 +55,7 @@ function ExamPage() {
           const subjectParts = {
             compiler_design: ["1", "2"],
             operating_system: ["1", "2"],
-            coa: ["1", "2"]
+            coa: ["1", "2"],
           };
 
           if (subjectParts[selectedPaper] && selectedSubjectPart) {
@@ -108,9 +112,13 @@ function ExamPage() {
   const nextQuestion = () => {
     setCurrentIndex((prev) => prev + 1);
     setSelectedAnswer(""); // Reset Selection
+    setShowFeedback(false); // Reset feedback
     window.scrollTo(0, 0); // Scroll to Top
   };
-  const prevQuestion = () => setCurrentIndex((prev) => prev - 1);
+  const prevQuestion = () => {
+    setCurrentIndex((prev) => prev - 1);
+    setShowFeedback(false);
+  };
 
   const handleSaveAnswer = () => {
     const currentCount = submissionCounts[currentQuestion.id] || 0;
@@ -118,8 +126,8 @@ function ExamPage() {
       currentQuestion.type === "MCQ"
         ? 1
         : currentQuestion.type === "MSQ"
-        ? 3
-        : 5;
+        ? 1
+        : 3;
 
     if (currentCount >= maxSubmissions) return;
 
@@ -152,7 +160,8 @@ function ExamPage() {
       [currentQuestion.id]: currentCount + 1,
     }));
 
-    alert(isCorrect ? "Correct!" : "Wrong!");
+    //alert(isCorrect ? "Correct!" : "Wrong!");
+    setShowFeedback(true); // Replace alert with this
   };
 
   // Get display title based on selection
@@ -224,9 +233,11 @@ function ExamPage() {
           currentQuestion.type === "MCQ"
             ? 1
             : currentQuestion.type === "MSQ"
-            ? 3
-            : 5
+            ? 1
+            : 3
         }
+        showFeedback={showFeedback}
+        isCorrect={answers[currentQuestion.id]?.isCorrect}
       />
 
       <div className={styles.finishSection}>
